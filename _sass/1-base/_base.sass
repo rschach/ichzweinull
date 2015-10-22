@@ -1,0 +1,18 @@
+*
+  box-sizing: border-box
+
+body
+  background: $neutral
+  color: $text-color
+  font-family: $base-font
+  font-size: $base-font-size
+  line-height: $base-line-height
+
+img
+  max-width: 100%
+  height: auto
+
+// Media Query Mixin
+=media($device)
+  @media screen and (min-width: $device)
+    @content

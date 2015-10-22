@@ -1,0 +1,38 @@
+.home
+  background: $bg-color
+  display: flex
+  align-items: center
+  position: relative
+
+  .container
+    max-width: 390px
+    margin: 0 auto
+
+    p
+      text-align: center
+
+  // Home ResponsiveTypography
+  @media (max-width: 480px)
+    p
+    font-size: 85%
+    line-height: 1.617em
+
+    h1
+    	 font-size: 2.5em
+    	 line-height: 1.1em
+
+    .container
+    	 max-width: 370px
+
+  @media (max-width: 320px)
+    p
+      line-height: 1.8em
+      font-size: 80%
+
+
+    h1
+    	font-size: 1.8em
+    	line-height: 1.25em
+
+    .container
+  	  max-width: 240px

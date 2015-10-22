@@ -1,0 +1,66 @@
+.projects
+  background: $neutral
+  position: relative
+
+figure
+  margin: 20px 0 0
+  position: relative
+  cursor: pointer
+  overflow: hidden
+
+  img
+    display: block
+    transform: scale(1)
+    transition: all .2s ease-in-out
+
+  figcaption
+    color: $text-color
+    background: transparentize($primary, 0.05)
+    padding: 24px
+    display: flex
+    align-items: center
+
+    .container
+      max-width: 300px
+      margin: 0 auto
+
+      h2, h3
+        margin-top: 0
+
+      p
+        text-align: center
+
+      .button
+        display: block
+        max-width: 200px
+        margin: 36px auto 12px
+        border: 1px solid
+        padding: 16px
+        font-size: 75%
+        font-weight: 700
+        letter-spacing: 2px
+        line-height: 1
+        text-align: center
+        text-transform: uppercase
+
+    +media ($nav-collapse)
+      position: absolute
+      top: 0
+      left: 0
+      width: 33.3%
+      height: 100%
+      //border-right: 10px solid $neutral
+      transition: all .2s ease-in-out
+
+  &:nth-of-type(2n)
+    figcaption
+      background: transparentize($bg-color, 0.05)
+      +media ($nav-collapse)
+        border-right: 0
+        //border-left: 10px solid $neutral
+        left: auto
+        right: 0
+
+  &:hover
+    img
+      transform: scale(1.05)
