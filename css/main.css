@@ -209,19 +209,92 @@ h4 {
 
 section {
   min-height: 85vh; }
+  @media screen and (min-width: 1600px) {
+    section {
+      min-height: 80vh; } }
+
+.main-header {
+  width: 100%;
+  margin: 30px 0 0;
+  padding: 0 50px; }
+  @media screen and (min-width: 1000px) {
+    .main-header {
+      height: 50px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline; } }
+
+.logo, .tagline, .main-header nav {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.logo h2 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: left; }
+.logo span {
+  color: #a83a24; }
+
+.tagline p {
+  font-size: 80%;
+  font-variant: small-caps;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none; }
+  @media screen and (min-width: 1000px) {
+    .tagline p {
+      text-align: center; } }
+
+.main-header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  @media screen and (min-width: 1000px) {
+    .main-header nav ul {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
+  .main-header nav ul li:not(:last-of-type) {
+    margin-right: 20px; }
+  .main-header nav ul li a {
+    color: #f0f0f0;
+    font-size: 75%;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px; }
+    .main-header nav ul li a:hover {
+      color: #a83a24; }
+    .main-header nav ul li a.active {
+      color: #a83a24; }
 
 .home {
   background: #101E2A;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   position: relative; }
   .home .container {
     max-width: 390px;
-    margin: 0 auto; }
+    margin: 12.5vh auto 0; }
+    @media screen and (min-width: 1600px) {
+      .home .container {
+        margin: 18vh auto 0; } }
     .home .container p {
       text-align: center; }
   @media (max-width: 480px) {

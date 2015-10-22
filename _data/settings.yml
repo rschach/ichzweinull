@@ -1,0 +1,5 @@
+menu:
+- {title: Home, url: 'home'}
+- {title: Projekte, url: 'projects'}
+- {title: Über, url: 'about'}
+- {title: Kontakt, url: 'contact'}

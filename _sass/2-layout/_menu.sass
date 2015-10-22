@@ -1,0 +1,27 @@
+.main-header nav
+
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+    +media($nav-collapse)
+      display: flex
+      justify-content: flex-end
+
+    li
+      &:not(:last-of-type)
+        margin-right: 20px
+
+      a
+        color: $text-color
+        font-size: 75%
+        font-weight: 700
+        text-transform: uppercase
+        padding: 8px
+
+        &:hover
+          color: $primary
+
+        &.active
+          color: $primary
