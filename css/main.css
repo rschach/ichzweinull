@@ -205,7 +205,7 @@ h4 {
 div.sections {
   padding: 2px;
   margin: 0 auto;
-  max-width: 1420px; }
+  max-width: 1600px; }
   @media screen and (min-width: 600px) {
     div.sections {
       padding: 10px; } }
@@ -217,7 +217,10 @@ section {
   min-height: 85vh; }
   @media screen and (min-width: 1400px) {
     section {
-      min-height: 75vh; } }
+      min-height: 80vh; } }
+  @media screen and (min-width: 1600px) {
+    section {
+      min-height: 70vh; } }
 
 .main-header {
   width: 100%;
@@ -301,9 +304,6 @@ section {
   .home .container {
     max-width: 390px;
     margin: 14vh auto 0; }
-    @media screen and (min-width: 1600px) {
-      .home .container {
-        margin: 16vh auto 0; } }
     .home .container p {
       text-align: center; }
 
