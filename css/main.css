@@ -163,7 +163,7 @@ h1:after {
   width: 160px;
   height: 4px;
   display: block;
-  margin: 34px auto;
+  margin: 24px auto;
   background: #a83a24; }
 
 p {
@@ -205,18 +205,18 @@ h4 {
 .sections {
   padding: 20px;
   margin: 0 auto;
-  max-width: 1600px; }
+  max-width: 1420px; }
 
 section {
   min-height: 85vh; }
   @media screen and (min-width: 1600px) {
     section {
-      min-height: 80vh; } }
+      min-height: 75vh; } }
 
 .main-header {
   width: 100%;
-  margin: 25px 0 0;
-  padding: 0 50px; }
+  margin: 36px 0 0;
+  padding: 0 60px; }
   @media screen and (min-width: 1000px) {
     .main-header {
       height: 50px;
@@ -234,7 +234,6 @@ section {
 
 .logo h2 {
   margin: 0;
-  font-size: 23px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -1px;
@@ -243,11 +242,10 @@ section {
   color: #a83a24; }
 
 .tagline p {
-  font-size: 80%;
+  font-size: 90%;
   font-variant: small-caps;
   font-weight: 400;
-  line-height: 1;
-  text-transform: none; }
+  line-height: 1; }
   @media screen and (min-width: 1000px) {
     .tagline p {
       text-align: center; } }
@@ -291,40 +289,19 @@ section {
   position: relative; }
   .home .container {
     max-width: 390px;
-    margin: 12.5vh auto 0; }
-    @media screen and (min-width: 1400px) {
-      .home .container {
-        margin: 15vh auto 0; } }
+    margin: 14vh auto 0; }
     @media screen and (min-width: 1600px) {
       .home .container {
-        margin: 17.5vh auto 0; } }
+        margin: 16vh auto 0; } }
     .home .container p {
       text-align: center; }
-  @media (max-width: 480px) {
-    .home {
-      font-size: 85%;
-      line-height: 1.617em; }
-      .home h1 {
-        font-size: 2.5em;
-        line-height: 1.1em; }
-      .home .container {
-        max-width: 370px; } }
-  @media (max-width: 320px) {
-    .home p {
-      line-height: 1.8em;
-      font-size: 80%; }
-    .home h1 {
-      font-size: 1.8em;
-      line-height: 1.25em; }
-    .home .container {
-      max-width: 240px; } }
 
 .projects {
   background: #f0f0f0;
   position: relative; }
 
 figure {
-  margin: 20px 0 0;
+  margin: 2px 0 0;
   position: relative;
   cursor: pointer;
   overflow: hidden; }
@@ -354,7 +331,7 @@ figure {
       figure figcaption .container .button {
         display: block;
         max-width: 200px;
-        margin: 36px auto 12px;
+        margin: 36px auto 24px;
         border: 1px solid;
         padding: 16px;
         font-size: 75%;
