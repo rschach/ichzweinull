@@ -204,7 +204,7 @@ h4 {
 
 .main-header {
   width: 100%;
-  margin: 24px 0 0;
+  margin: 36px 0 0;
   padding: 0 60px; }
   @media screen and (min-width: 1000px) {
     .main-header {
@@ -232,10 +232,10 @@ h4 {
 
 .tagline p {
   color: #f0f0f0;
-  font-size: 100%;
-  font-variant: small-caps;
-  font-weight: 300;
-  line-height: 1; }
+  font-size: 75%;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase; }
   @media screen and (min-width: 1000px) {
     .tagline p {
       text-align: center; } }
@@ -323,7 +323,7 @@ section {
   position: relative; }
   .home .container {
     max-width: 390px;
-    margin: 14vh auto 0; }
+    margin: 16vh auto 0; }
     @media screen and (min-width: 1400px) {
       .home .container {
         margin-top: 15vh; } }
