@@ -220,11 +220,11 @@ section {
       min-height: 80vh; } }
   @media screen and (min-width: 1600px) {
     section {
-      min-height: 70vh; } }
+      min-height: 75vh; } }
 
 .main-header {
   width: 100%;
-  margin: 36px 0 0;
+  margin: 24px 0 0;
   padding: 0 60px; }
   @media screen and (min-width: 1000px) {
     .main-header {
@@ -251,10 +251,10 @@ section {
   color: #a83a24; }
 
 .tagline p {
-  color: #e3e3e3;
-  font-size: 90%;
+  color: #f0f0f0;
+  font-size: 100%;
   font-variant: small-caps;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1; }
   @media screen and (min-width: 1000px) {
     .tagline p {
@@ -277,13 +277,13 @@ section {
       margin-right: 20px; } }
   @media screen and (min-width: 1200px) {
     .main-header nav ul li:not(:last-of-type) {
-      margin-right: 30px; } }
+      margin-right: 40px; } }
   .main-header nav ul li a {
     color: #e3e3e3;
     font-size: 75%;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 8px; }
+    padding: 16px 0; }
     .main-header nav ul li a:hover {
       color: #a83a24; }
     .main-header nav ul li a.active {
@@ -304,6 +304,12 @@ section {
   .home .container {
     max-width: 390px;
     margin: 14vh auto 0; }
+    @media screen and (min-width: 1400px) {
+      .home .container {
+        margin-top: 15vh; } }
+    @media screen and (min-width: 1600px) {
+      .home .container {
+        margin-top: 16.5vh; } }
     .home .container p {
       text-align: center; }
 

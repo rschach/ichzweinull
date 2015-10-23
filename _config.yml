@@ -1,9 +1,8 @@
 # Site settings
-title: ichzwei.null - Web, Design und Entwicklung
+title: ichzwei.null - Webdesign &amp; Entwicklung
 description: > # this means to ignore newlines until "baseurl:"
-  Portfolio von Sascha Mersch, Webdesigner in Berlin
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+ Portfolio von Sascha Mersch, Webdesigner in Berlin
+
 # Build settings
 markdown: kramdown
 exclude: ["node_modules","gulpfile.js","package.json"]
