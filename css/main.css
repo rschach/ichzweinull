@@ -202,14 +202,20 @@ h4 {
   margin-top: 1.5em;
   margin-bottom: 1.5em; }
 
-.sections {
-  padding: 20px;
+div.sections {
+  padding: 2px;
   margin: 0 auto;
   max-width: 1420px; }
+  @media screen and (min-width: 600px) {
+    div.sections {
+      padding: 10px; } }
+  @media screen and (min-width: 800px) {
+    div.sections {
+      padding: 20px; } }
 
 section {
   min-height: 85vh; }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1400px) {
     section {
       min-height: 75vh; } }
 
@@ -242,6 +248,7 @@ section {
   color: #a83a24; }
 
 .tagline p {
+  color: #e3e3e3;
   font-size: 90%;
   font-variant: small-caps;
   font-weight: 400;
@@ -262,10 +269,14 @@ section {
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;
               justify-content: flex-end; } }
-  .main-header nav ul li:not(:last-of-type) {
-    margin-right: 20px; }
+  @media screen and (min-width: 1000px) {
+    .main-header nav ul li:not(:last-of-type) {
+      margin-right: 20px; } }
+  @media screen and (min-width: 1200px) {
+    .main-header nav ul li:not(:last-of-type) {
+      margin-right: 30px; } }
   .main-header nav ul li a {
-    color: #f0f0f0;
+    color: #e3e3e3;
     font-size: 75%;
     font-weight: 700;
     text-transform: uppercase;

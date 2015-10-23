@@ -1,10 +1,16 @@
-.sections
-  padding: 20px
+div.sections
+  padding: 2px
   margin: 0 auto
   max-width: 1420px
+
+  +media($small)
+    padding: 10px
+
+  +media($medium)
+    padding: 20px
 
 section
   min-height: 85vh
 
-  +media($huge)
+  +media($large)
     min-height: 75vh

@@ -18,7 +18,7 @@
     e.preventDefault();
 
     $body.animate({
-        scrollTop: $target.offset().top-70
+        scrollTop: $target.offset().top-50
     }, 300);
   }
 

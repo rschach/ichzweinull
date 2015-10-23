@@ -10,11 +10,15 @@
       justify-content: flex-end
 
     li
-      &:not(:last-of-type)
-        margin-right: 20px
+      +media($nav-collapse)
+        &:not(:last-of-type)
+          margin-right: 20px
+      +media($big)
+        &:not(:last-of-type)
+          margin-right: 30px
 
       a
-        color: $text-color
+        color: darken($neutral, 5%)
         font-size: 75%
         font-weight: 700
         text-transform: uppercase
