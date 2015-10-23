@@ -202,26 +202,6 @@ h4 {
   margin-top: 1.5em;
   margin-bottom: 1.5em; }
 
-div.sections {
-  padding: 2px;
-  margin: 0 auto;
-  max-width: 1600px; }
-  @media screen and (min-width: 600px) {
-    div.sections {
-      padding: 10px; } }
-  @media screen and (min-width: 800px) {
-    div.sections {
-      padding: 20px; } }
-
-section {
-  min-height: 85vh; }
-  @media screen and (min-width: 1400px) {
-    section {
-      min-height: 80vh; } }
-  @media screen and (min-width: 1600px) {
-    section {
-      min-height: 75vh; } }
-
 .main-header {
   width: 100%;
   margin: 24px 0 0;
@@ -288,6 +268,26 @@ section {
       color: #a83a24; }
     .main-header nav ul li a.active {
       color: #a83a24; }
+
+div.sections {
+  padding: 2px;
+  margin: 0 auto;
+  max-width: 1600px; }
+  @media screen and (min-width: 600px) {
+    div.sections {
+      padding: 10px; } }
+  @media screen and (min-width: 800px) {
+    div.sections {
+      padding: 20px; } }
+
+section {
+  min-height: 85vh; }
+  @media screen and (min-width: 1400px) {
+    section {
+      min-height: 80vh; } }
+  @media screen and (min-width: 1600px) {
+    section {
+      min-height: 75vh; } }
 
 .home {
   background: #101E2A;

@@ -3,8 +3,9 @@
 @import "1-base/base";
 @import "1-base/typography";
 @import "1-base/baseline";
-@import "2-layout/sections";
-@import "2-layout/header";
-@import "2-layout/menu";
-@import "2-layout/home";
-@import "2-layout/projects";
+@import "2-modules/header";
+@import "2-modules/menu";
+@import "2-modules/buttons";
+@import "3-layout/sections";
+@import "3-layout/home";
+@import "3-layout/projects";
