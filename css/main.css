@@ -292,7 +292,7 @@ h4 {
 div.sections {
   padding: 2px;
   margin: 0 auto;
-  max-width: 1600px; }
+  max-width: 1500px; }
   @media screen and (min-width: 600px) {
     div.sections {
       padding: 10px; } }
