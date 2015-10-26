@@ -1,3 +1,5 @@
+// Main Menu
+
 (function($){
   var $body = $('html, body'),
       $window = $(window),
@@ -27,4 +29,20 @@
     $('a[href^="#"]').on('click', onMenuLinkClick);
   });
 
-})(jQuery)
+})(jQuery);
+
+// Affix Header
+
+$(window).scroll(function(){
+  var wScroll = $(this).scrollTop(),
+      $header = $('.main-header'),
+      hScroll = $header.scrollTop();
+
+  if(wScroll > hScroll) {
+    $header.addClass('fixed');
+  }
+
+  else {
+    $header.removeClass('fixed');
+  }
+});

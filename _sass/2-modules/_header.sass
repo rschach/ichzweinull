@@ -2,11 +2,38 @@
   width: 100%
   margin: 36px 0 0
   padding: 0 60px
+  position: relative
+  transition: padding 0.15s ease-in-out
 
   +media($nav-collapse)
     height: 50px
     display: flex
     align-items: baseline
+
+  &.fixed
+    align-items: center
+    background: $bg-color
+    box-shadow: 0 2px 4px rgba(0,0,0,.4)
+    margin: 0
+    padding: 0 30px
+    position: fixed
+    top: 0
+    left: 50%
+    z-index: 100
+    transform: translateX(-50%)
+    max-width: calc(100% - 5px )
+
+    .logo h2
+      font-size: 1.25em
+
+    +media($small)
+      max-width: calc(100% - 21px)
+
+    +media($medium)
+      max-width: calc(100% - 40px)
+
+    +media($container-max-width)
+      max-width: calc(1500px - 40px)
 
 .logo, .tagline, .main-header nav
     flex: 1
@@ -24,9 +51,9 @@
 
 .tagline
   p
-    color: $neutral
+    color: darken($neutral, 15%)
     font-size: 75%
-    font-weight: 400
+    font-weight: 700
     line-height: 1
     text-transform: uppercase
 

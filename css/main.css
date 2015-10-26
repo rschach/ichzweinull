@@ -205,7 +205,9 @@ h4 {
 .main-header {
   width: 100%;
   margin: 36px 0 0;
-  padding: 0 60px; }
+  padding: 0 60px;
+  position: relative;
+  transition: padding 0.15s ease-in-out; }
   @media screen and (min-width: 1000px) {
     .main-header {
       height: 50px;
@@ -215,6 +217,33 @@ h4 {
       -webkit-align-items: baseline;
           -ms-flex-align: baseline;
               align-items: baseline; } }
+  .main-header.fixed {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #101E2A;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    margin: 0;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 100;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    max-width: calc(100% - 5px); }
+    .main-header.fixed .logo h2 {
+      font-size: 1.25em; }
+    @media screen and (min-width: 600px) {
+      .main-header.fixed {
+        max-width: calc(100% - 21px); } }
+    @media screen and (min-width: 800px) {
+      .main-header.fixed {
+        max-width: calc(100% - 40px); } }
+    @media screen and (min-width: 1500px) {
+      .main-header.fixed {
+        max-width: calc(1500px - 40px); } }
 
 .logo, .tagline, .main-header nav {
   -webkit-flex: 1;
@@ -231,9 +260,9 @@ h4 {
   color: #a83a24; }
 
 .tagline p {
-  color: #f0f0f0;
+  color: #cacaca;
   font-size: 75%;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1;
   text-transform: uppercase; }
   @media screen and (min-width: 1000px) {
@@ -259,7 +288,7 @@ h4 {
     .main-header nav ul li:not(:last-of-type) {
       margin-right: 40px; } }
   .main-header nav ul li a {
-    color: #e3e3e3;
+    color: #cacaca;
     font-size: 75%;
     font-weight: 700;
     text-transform: uppercase;
