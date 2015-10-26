@@ -221,7 +221,7 @@ h4 {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #101E2A;
+    background: #17212C;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     margin: 0;
     padding: 0 30px;
@@ -341,7 +341,7 @@ section {
       min-height: 75vh; } }
 
 .home {
-  background: #101E2A;
+  background: #17212C;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -401,7 +401,7 @@ figure {
         height: 100%;
         transition: all 0.2s ease-in-out; } }
   figure:nth-of-type(2n) figcaption {
-    background: rgba(16, 30, 42, 0.95); }
+    background: rgba(23, 33, 44, 0.95); }
     @media screen and (min-width: 1000px) {
       figure:nth-of-type(2n) figcaption {
         border-right: 0;
