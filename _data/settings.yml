@@ -3,3 +3,8 @@ menu:
 - {title: Projekte, url: 'projects'}
 - {title: Über, url: 'about'}
 - {title: Kontakt, url: 'contact'}
+
+projects:
+- {title: Personal Excellence, image: personal-excellence.jpg, text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
+- {title: Werkraum, image: werkraum.jpg, text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
+- {title: Kleine Nachtrevue, image: kleine-nachtrevue.jpg, text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}

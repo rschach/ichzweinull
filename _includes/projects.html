@@ -1,38 +1,16 @@
 <section id="projects" class="projects">
+  {% for project in site.data.settings.projects %}
   <figure>
-    <img src="../img/personal-excellence.jpg" />
+    <img src="../img/{{ project.image }}" alt="{{ project.title }}"/>
     <figcaption>
       <div class="container">
-        <h2>Personal Excellence</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.text }}</p>
         <span class="button">
           Projekt Ansehen
         </span>
       </div>
     </figcaption>
   </figure>
-  <figure>
-    <img src="../img/werk.jpg" />
-    <figcaption>
-      <div class="container">
-        <h2>Werkraum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-        <span class="button">
-          Projekt Ansehen
-        </span>
-      </div>
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="../img/drei.jpg" />
-    <figcaption>
-      <div class="container">
-        <h2>Kleine Nachtrevue</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-        <span class="button">
-          Projekt Ansehen
-        </span>
-      </div>
-    </figcaption>
-  </figure>
+  {% endfor %}
 </section>
