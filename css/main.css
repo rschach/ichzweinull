@@ -366,11 +366,7 @@ figure {
   cursor: pointer;
   overflow: hidden; }
   figure img {
-    display: block;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-    transition: all 0.2s ease-in-out; }
+    display: block; }
   figure figcaption {
     color: #f0f0f0;
     background: rgba(168, 58, 36, 0.95);
@@ -403,7 +399,3 @@ figure {
         border-right: 0;
         left: auto;
         right: 0; } }
-  figure:hover img {
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05); }
