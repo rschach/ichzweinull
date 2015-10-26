@@ -38,7 +38,7 @@ $(window).scroll(function(){
       $header = $('.main-header'),
       hScroll = $header.scrollTop();
 
-  if(wScroll > hScroll) {
+  if(wScroll > (hScroll+80)) {
     $header.addClass('fixed');
   }
 
