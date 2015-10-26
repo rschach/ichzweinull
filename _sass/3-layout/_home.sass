@@ -7,7 +7,13 @@
 
   .container
     max-width: 390px
-    margin: 16vh auto 0
+    margin: 0 auto
+
+    +media($nav-collapse)
+      margin-top: 12.5vh
+
+    +media($large)
+      margin-top: 16vh
 
     p
       text-align: center
