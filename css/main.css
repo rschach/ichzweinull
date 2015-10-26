@@ -143,7 +143,7 @@ td, th {
   box-sizing: border-box; }
 
 body {
-  background: #f0f0f0;
+  background: #111A22;
   color: #f0f0f0;
   font-family: 'Neue Haas Unica W01', 'Nimbus Sans L', Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -204,7 +204,7 @@ h4 {
 
 .main-header {
   width: 100%;
-  margin: 36px 0 0;
+  margin: 30px 0 0;
   padding: 0 60px;
   position: relative;
   transition: padding 0.15s ease-in-out; }
@@ -221,8 +221,8 @@ h4 {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #17212C;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    background: #17232e;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     margin: 0;
     padding: 0 30px;
     position: fixed;
@@ -232,12 +232,12 @@ h4 {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    max-width: calc(100% - 5px); }
+    max-width: calc(100% - 4px); }
     .main-header.fixed .logo h2 {
       font-size: 1.25em; }
     @media screen and (min-width: 600px) {
       .main-header.fixed {
-        max-width: calc(100% - 21px); } }
+        max-width: calc(100% - 20px); } }
     @media screen and (min-width: 800px) {
       .main-header.fixed {
         max-width: calc(100% - 40px); } }
@@ -326,10 +326,10 @@ div.sections {
   max-width: 1500px; }
   @media screen and (min-width: 600px) {
     div.sections {
-      padding: 10px; } }
+      padding: 0 10px; } }
   @media screen and (min-width: 800px) {
     div.sections {
-      padding: 20px; } }
+      padding: 0 20px; } }
 
 section {
   min-height: 85vh; }
@@ -341,7 +341,7 @@ section {
       min-height: 75vh; } }
 
 .home {
-  background: #17212C;
+  background: #17232e;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -365,11 +365,11 @@ section {
       text-align: center; }
 
 .projects {
-  background: #f0f0f0;
+  background: #111A22;
   position: relative; }
 
 figure {
-  margin: 2px 0 0;
+  margin: 20px 0 0;
   position: relative;
   cursor: pointer;
   overflow: hidden; }
@@ -401,7 +401,7 @@ figure {
         height: 100%;
         transition: all 0.2s ease-in-out; } }
   figure:nth-of-type(2n) figcaption {
-    background: rgba(23, 33, 44, 0.95); }
+    background: #17232e; }
     @media screen and (min-width: 1000px) {
       figure:nth-of-type(2n) figcaption {
         border-right: 0;

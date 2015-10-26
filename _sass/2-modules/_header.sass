@@ -1,6 +1,6 @@
 .main-header
   width: 100%
-  margin: 36px 0 0
+  margin: 30px 0 0
   padding: 0 60px
   position: relative
   transition: padding 0.15s ease-in-out
@@ -12,8 +12,8 @@
 
   &.fixed
     align-items: center
-    background: $bg-color
-    box-shadow: 0 2px 4px rgba(0,0,0,.4)
+    background: $bg-lighter
+    box-shadow: 0 1px 4px rgba(0,0,0,.4)
     margin: 0
     padding: 0 30px
     position: fixed
@@ -21,13 +21,13 @@
     left: 50%
     z-index: 100
     transform: translateX(-50%)
-    max-width: calc(100% - 5px )
+    max-width: calc(100% - 4px )
 
     .logo h2
       font-size: 1.25em
 
     +media($small)
-      max-width: calc(100% - 21px)
+      max-width: calc(100% - 20px)
 
     +media($medium)
       max-width: calc(100% - 40px)

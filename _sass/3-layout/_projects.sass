@@ -1,9 +1,9 @@
 .projects
-  background: $neutral
+  background: $bg-color
   position: relative
 
 figure
-  margin: 2px 0 0
+  margin: 20px 0 0
   position: relative
   cursor: pointer
   overflow: hidden
@@ -38,7 +38,7 @@ figure
 
   &:nth-of-type(2n)
     figcaption
-      background: transparentize($bg-color, 0.05)
+      background: $bg-lighter
       +media ($nav-collapse)
         border-right: 0
         left: auto
