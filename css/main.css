@@ -221,7 +221,7 @@ h4 {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #17232e;
+    background: #182430;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     margin: 0;
     padding: 0 30px;
@@ -341,7 +341,7 @@ section {
       min-height: 75vh; } }
 
 .home {
-  background: #17232e;
+  background: #182430;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -356,9 +356,6 @@ section {
     max-width: 390px;
     margin: 0 auto; }
     @media screen and (min-width: 1000px) {
-      .home .container {
-        margin-top: 12.5vh; } }
-    @media screen and (min-width: 1400px) {
       .home .container {
         margin-top: 16vh; } }
     .home .container p {
@@ -401,7 +398,7 @@ figure {
         height: 100%;
         transition: all 0.2s ease-in-out; } }
   figure:nth-of-type(2n) figcaption {
-    background: #17232e; }
+    background: #182430; }
     @media screen and (min-width: 1000px) {
       figure:nth-of-type(2n) figcaption {
         border-right: 0;
