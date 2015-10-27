@@ -288,7 +288,7 @@ h4 {
     .main-header nav ul li:not(:last-of-type) {
       margin-right: 40px; } }
   .main-header nav ul li a {
-    color: #cacaca;
+    color: #f0f0f0;
     font-size: 75%;
     font-weight: 700;
     text-transform: uppercase;
