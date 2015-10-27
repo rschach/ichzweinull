@@ -28,14 +28,14 @@
 
     $menuToggle.removeClass('is-open');
     $mainHeader.removeClass('is-open');
-    
+
     $body.animate({
         scrollTop: $target.offset().top-50
     }, 300);
   }
 
   $(document).ready(function(){
-    firstLinkActive();
+    // firstLinkActive();
     $menuToggle.on('click', onMenuToggleClick);
     $('a[href^="#"]').on('click', onMenuLinkClick);
   });

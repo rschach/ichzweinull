@@ -268,7 +268,7 @@ nav.main-nav {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
-  padding: 0 0 24px;
+  padding: 24px 0;
   text-align: center; }
 
 @media screen and (min-width: 1000px) {
@@ -332,6 +332,16 @@ nav.main-nav ul {
         outline: 0; }
       nav.main-nav ul li a.active {
         color: #a83a24; }
+nav.main-nav::after {
+  content: '';
+  display: block;
+  background: #a83a24;
+  width: 160px;
+  height: 4px;
+  margin: 36px auto 24px; }
+  @media screen and (min-width: 1000px) {
+    nav.main-nav::after {
+      display: none; } }
 
 .menu-toggle {
   width: 40px;
@@ -380,9 +390,6 @@ nav.main-nav ul {
         -ms-transform-origin: center;
             transform-origin: center;
     top: -4px; }
-
-.main-header.fixed .menu-toggle.is-open .menu-bar::after {
-  top: -4px; }
 
 .button {
   color: #f0f0f0;

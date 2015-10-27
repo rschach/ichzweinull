@@ -34,3 +34,14 @@ nav.main-nav
 
         &.active
           color: $primary
+
+  &::after
+    content: ''
+    display: block
+    background: $primary
+    width: 160px
+    height: 4px
+    margin: 36px auto 24px
+
+    +media($nav-collapse)
+      display: none
