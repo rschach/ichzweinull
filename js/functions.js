@@ -3,10 +3,17 @@
 (function($){
   var $body = $('html, body'),
       $window = $(window),
-      $menuLink = $('nav ul li a');
+      $menuLink = $('nav ul li a'),
+      $menuToggle = $('.menu-toggle'),
+      $mainHeader = $('.main-header');
 
   function firstLinkActive () {
     $menuLink.first().addClass('active');
+  }
+
+  function onMenuToggleClick (e) {
+    $menuToggle.toggleClass('is-open');
+    $mainHeader.toggleClass('is-open');
   }
 
   function onMenuLinkClick (e) {
@@ -19,6 +26,9 @@
 
     e.preventDefault();
 
+    $menuToggle.removeClass('is-open');
+    $mainHeader.removeClass('is-open');
+    
     $body.animate({
         scrollTop: $target.offset().top-50
     }, 300);
@@ -26,6 +36,7 @@
 
   $(document).ready(function(){
     firstLinkActive();
+    $menuToggle.on('click', onMenuToggleClick);
     $('a[href^="#"]').on('click', onMenuLinkClick);
   });
 

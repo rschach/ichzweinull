@@ -1,14 +1,24 @@
+// Fixed Header
 .main-header
+  background: $bg-lighter
   width: 100%
   margin: 30px 0 0
-  padding: 0 60px
-  position: relative
-  transition: padding 0.15s ease-in-out
+  padding: 0 30px
+  position: absolute
+  transition: padding 0.15s ease-in-out, max-height 0.2s ease-in-out
+  max-height: 50px
+  overflow: hidden
+  display: flex
+  align-items: center
+  flex-wrap: wrap
 
   +media($nav-collapse)
-    height: 50px
-    display: flex
+    padding: 0 60px
     align-items: baseline
+    flex-wrap: nowrap
+
+  &.is-open
+    max-height: 500px
 
   &.fixed
     align-items: center
@@ -29,15 +39,28 @@
     +media($small)
       max-width: calc(100% - 20px)
 
-    +media($medium)
+    +media($small-med)
       max-width: calc(100% - 40px)
 
     +media($container-max-width)
       max-width: calc(1500px - 40px)
 
-.logo, .tagline, .main-header nav
-    flex: 1
+// Header Flex Elements
+.logo, .tagline, .menu-toggle
+  flex-basis: 33.33%
 
+nav.main-nav
+  flex-basis: 100%
+  padding: 0 0 24px
+  text-align: center
+
++media($nav-collapse)
+  .logo, .tagline, .menu-toggle, nav.main-nav
+    flex: 1
+    flex-basis: 33.33%
+    padding: 0
+
+// Logo and Tagline
 .logo
   h2
     margin: 0
@@ -55,7 +78,6 @@
     font-size: 75%
     font-weight: 700
     line-height: 1
-    text-transform: uppercase
 
-    +media($nav-collapse)
-      text-align: center
+    text-align: center
+    text-transform: uppercase

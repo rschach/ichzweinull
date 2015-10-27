@@ -1,0 +1,44 @@
+.menu-toggle
+  width: 40px
+  height: 40px
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+  &:hover
+    cursor: pointer
+
+  +media($nav-collapse)
+    display: none
+
+  .menu-bar, .menu-bar:before, .menu-bar:after
+      content: ''
+      background: $neutral
+      display: block
+      position: relative
+      width: 25px
+      height: 4px
+      transition: all .2s ease-in-out
+
+  .menu-bar:before
+    top: 8px
+
+  .menu-bar:after
+    top: -12px
+
+  &.is-open
+    .menu-bar
+      background: transparent
+
+    .menu-bar:before
+      transform: rotate(45deg)
+      transform-origin: center
+      top: 0
+
+    .menu-bar:after
+      transform: rotate(-45deg)
+      transform-origin: center
+      top: -4px
+
+.main-header.fixed .menu-toggle.is-open .menu-bar::after
+    top: -4px

@@ -1,4 +1,4 @@
-.main-header nav
+nav.main-nav
 
   ul
     margin: 0
@@ -10,7 +10,9 @@
       justify-content: flex-end
 
     li
+      padding: 16px 0
       +media($nav-collapse)
+        padding: 0
         &:not(:last-of-type)
           margin-right: 20px
       +media($big)
