@@ -143,7 +143,7 @@ td, th {
   box-sizing: border-box; }
 
 body {
-  background: #111A22;
+  background: #172027;
   color: #f0f0f0;
   font-family: 'Neue Haas Unica W01', 'Nimbus Sans L', Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -203,7 +203,7 @@ h4 {
   margin-bottom: 1.5em; }
 
 .main-header {
-  background: #182430;
+  background: #1f2b34;
   width: 100%;
   margin: 30px 0 0;
   padding: 0 30px;
@@ -235,7 +235,7 @@ h4 {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #182430;
+    background: #1f2b34;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     margin: 0;
     padding: 0 30px;
@@ -291,7 +291,7 @@ nav.main-nav {
   color: #a83a24; }
 
 .tagline p {
-  color: #cacaca;
+  color: #f0f0f0;
   font-size: 75%;
   font-weight: 700;
   line-height: 1;
@@ -435,7 +435,7 @@ section {
       min-height: 75vh; } }
 
 .home {
-  background: #182430;
+  background: #1f2b34;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -456,7 +456,7 @@ section {
       text-align: center; }
 
 .projects {
-  background: #111A22;
+  background: #172027;
   position: relative; }
 
 figure {
@@ -492,7 +492,7 @@ figure {
         height: 100%;
         transition: all 0.2s ease-in-out; } }
   figure:nth-of-type(2n) figcaption {
-    background: #182430; }
+    background: #1f2b34; }
     @media screen and (min-width: 1000px) {
       figure:nth-of-type(2n) figcaption {
         border-right: 0;
