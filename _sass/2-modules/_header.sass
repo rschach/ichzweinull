@@ -31,19 +31,19 @@
     left: 50%
     z-index: 100
     transform: translateX(-50%)
-    max-width: calc(100% - 4px )
+    max-width: $container-initial-width
 
     .logo h2
       font-size: 1.25em
 
-    +media($small)
-      max-width: calc(100% - 20px)
-
     +media($small-med)
-      max-width: calc(100% - 40px)
+      max-width: $container-medium-width
 
-    +media($container-max-width)
-      max-width: calc(1500px - 40px)
+    +media($big)
+      max-width: $container-large-width
+
+    +media($huge)
+      max-width: $container-max-width
 
 // Header Flex Elements
 .logo, .tagline, .menu-toggle

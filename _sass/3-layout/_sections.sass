@@ -1,19 +1,22 @@
 div.sections
-  padding: 2px
+  padding: 0
   margin: 0 auto
-  max-width: $container-max-width
-
-  +media($small)
-    padding: 0 10px
+  max-width: $container-initial-width
 
   +media($small-med)
-    padding: 0 20px
+      max-width: $container-medium-width
+
+  +media($big)
+      max-width: $container-large-width
+
+  +media($huge)
+      max-width: $container-max-width
 
 section
   min-height: 72.5vh
 
   +media($nav-collapse)
-    min-height: 80vh
+    min-height: 85vh
 
   +media($huge)
     min-height: 75vh
