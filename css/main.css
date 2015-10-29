@@ -206,7 +206,7 @@ h4 {
   background: #1f2b34;
   width: 100%;
   margin: 30px 0 0;
-  padding: 0 30px;
+  padding: 0 20px;
   position: absolute;
   transition: padding 0.15s ease-in-out, max-height 0.2s ease-in-out;
   max-height: 50px;
@@ -238,7 +238,7 @@ h4 {
     background: #1f2b34;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     margin: 0;
-    padding: 0 30px;
+    padding: 0 20px;
     position: fixed;
     top: 0;
     left: 50%;
@@ -316,10 +316,10 @@ nav.main-nav ul {
       nav.main-nav ul li {
         padding: 0; }
         nav.main-nav ul li:not(:last-of-type) {
-          margin-right: 20px; } }
+          margin-right: 24px; } }
     @media screen and (min-width: 1200px) {
       nav.main-nav ul li:not(:last-of-type) {
-        margin-right: 40px; } }
+        margin-right: 36px; } }
     nav.main-nav ul li a {
       color: #f0f0f0;
       font-size: 75%;
@@ -338,7 +338,7 @@ nav.main-nav::after {
   background: #a83a24;
   width: 160px;
   height: 4px;
-  margin: 36px auto 24px; }
+  margin: 36px auto 48px; }
   @media screen and (min-width: 1000px) {
     nav.main-nav::after {
       display: none; } }
@@ -400,16 +400,15 @@ nav.main-nav::after {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  transition: background-color 0.2s, box-shadow 0.2s, color 0.2s;
   margin: 36px auto;
-  max-width: 200px;
+  max-width: 190px;
   display: block;
-  box-shadow: inset 0 0 0.25em rgba(240, 240, 240, 0.4), 0 0 0.25em rgba(240, 240, 240, 0.4);
-  border: 1px solid #f0f0f0; }
+  border: 1px solid #f0f0f0;
+  transition: all 0.2s ease-in-out; }
   .button:hover {
     color: #a83a24;
     background: #f0f0f0;
-    box-shadow: inset 0 0 0 rgba(240, 240, 240, 0.4), 0 0 0.5em rgba(240, 240, 240, 0.4); }
+    border-color: #f0f0f0; }
 
 div.sections {
   padding: 0;
@@ -448,7 +447,7 @@ section {
   position: relative; }
   .home .container {
     max-width: 390px;
-    margin: 10vh auto 0; }
+    margin: 21vh auto 0; }
     @media screen and (min-width: 1000px) {
       .home .container {
         margin-top: 24vh; } }
