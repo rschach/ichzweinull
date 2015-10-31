@@ -30,7 +30,7 @@
     $mainHeader.removeClass('is-open');
 
     $body.animate({
-        scrollTop: $target.offset().top-50
+        scrollTop: $target.offset().top-45
     }, 300);
   }
 
