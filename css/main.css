@@ -203,7 +203,7 @@ h4 {
   margin-bottom: 1.5em; }
 
 .main-header {
-  background: #1f2b34;
+  background: #202d37;
   width: 100%;
   margin: 30px 0 0;
   padding: 0 20px;
@@ -235,7 +235,7 @@ h4 {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #1f2b34;
+    background: #202d37;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     margin: 0;
     padding: 0 20px;
@@ -434,7 +434,7 @@ section {
       min-height: 75vh; } }
 
 .home {
-  background: #1f2b34;
+  background: #202d37;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -491,7 +491,7 @@ figure {
         height: 100%;
         transition: all 0.2s ease-in-out; } }
   figure:nth-of-type(2n) figcaption {
-    background: #1f2b34; }
+    background: #202d37; }
     @media screen and (min-width: 1000px) {
       figure:nth-of-type(2n) figcaption {
         border-right: 0;
