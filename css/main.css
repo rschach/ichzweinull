@@ -395,7 +395,7 @@ nav.main-nav::after {
     top: -4px; }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(23, 32, 39, 0.95);
   position: fixed;
   z-index: 9000;
   top: 0;
