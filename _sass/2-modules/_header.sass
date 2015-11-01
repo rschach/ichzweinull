@@ -2,7 +2,7 @@
 .main-header
   background: $bg-lighter
   width: 100%
-  margin: 30px 0 0
+  margin: 0
   padding: 0 20px
   position: absolute
   transition: padding 0.15s ease-in-out, max-height 0.2s ease-in-out
@@ -12,7 +12,11 @@
   align-items: center
   flex-wrap: wrap
 
+  +media($small-med)
+    margin: 10px 0
+
   +media($nav-collapse)
+    margin: 20px 0
     padding: 0 60px
     align-items: baseline
     flex-wrap: nowrap
@@ -51,19 +55,18 @@
 
 nav.main-nav
   flex-basis: 100%
-  padding: 24px 0
+  padding: 36px 0
   text-align: center
 
 +media($nav-collapse)
   .logo, .tagline, .menu-toggle, nav.main-nav
     flex: 1
-    flex-basis: 33.33%
     padding: 0
 
 // Logo and Tagline
 .logo
   h2
-    margin: 0
+    margin: 0.75em 0
     font-weight: 700
     line-height: 1
     letter-spacing: -1px

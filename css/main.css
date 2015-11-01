@@ -205,7 +205,7 @@ h4 {
 .main-header {
   background: #22303a;
   width: 100%;
-  margin: 30px 0 0;
+  margin: 0;
   padding: 0 20px;
   position: absolute;
   transition: padding 0.15s ease-in-out, max-height 0.2s ease-in-out;
@@ -220,8 +220,12 @@ h4 {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
+  @media screen and (min-width: 700px) {
+    .main-header {
+      margin: 10px 0; } }
   @media screen and (min-width: 1000px) {
     .main-header {
+      margin: 20px 0;
       padding: 0 60px;
       -webkit-align-items: baseline;
           -ms-flex-align: baseline;
@@ -268,7 +272,7 @@ nav.main-nav {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
-  padding: 24px 0;
+  padding: 36px 0;
   text-align: center; }
 
 @media screen and (min-width: 1000px) {
@@ -276,13 +280,10 @@ nav.main-nav {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    -webkit-flex-basis: 33.33%;
-        -ms-flex-preferred-size: 33.33%;
-            flex-basis: 33.33%;
     padding: 0; } }
 
 .logo h2 {
-  margin: 0;
+  margin: 0.75em 0;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -1px;
@@ -477,8 +478,11 @@ figure {
         -ms-flex-align: center;
             align-items: center; }
     figure figcaption .container {
-      max-width: 300px;
+      max-width: 90%;
       margin: 0 auto; }
+      @media screen and (min-width: 1000px) {
+        figure figcaption .container {
+          max-width: 300px; } }
       figure figcaption .container h2, figure figcaption .container h3 {
         margin-top: 0; }
       figure figcaption .container p {

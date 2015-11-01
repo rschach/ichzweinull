@@ -19,8 +19,11 @@ figure
     align-items: center
 
     .container
-      max-width: 300px
+      max-width: 90%
       margin: 0 auto
+
+      +media($nav-collapse)
+        max-width: 300px
 
       h2, h3
         margin-top: 0
