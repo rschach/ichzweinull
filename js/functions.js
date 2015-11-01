@@ -55,17 +55,20 @@ $(window).scroll(function(){
 
 // Projects
 (function($){
-  var $body = $('html, body'),
-      $overlay = $('.overlay');
+  var $body = $('body'),
+      $overlay = $('.overlay'),
+      $ajaxContainer = $('.ajax-container');
 
   function onProjectClick (e) {
     $overlay.addClass('is-visible');
     $body.addClass('noscroll');
+    $ajaxContainer.addClass('is-visible');
   }
 
   function onOverlayClick (e) {
     $overlay.removeClass('is-visible');
     $body.removeClass('noscroll');
+    $ajaxContainer.removeClass('is-visible');
   }
 
   $(document).ready(function(){

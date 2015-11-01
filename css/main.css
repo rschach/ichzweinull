@@ -397,21 +397,65 @@ nav.main-nav::after {
 .overlay {
   background: rgba(23, 32, 39, 0.95);
   position: fixed;
-  z-index: 9000;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  transition: all 0.2s ease-in-out; }
+  transition: opacity 0.2s ease-in-out; }
   .overlay.is-visible {
+    z-index: 101;
+    opacity: 1; }
+
+.ajax-container {
+  background: #22303a;
+  box-shadow: none;
+  position: fixed;
+  top: 2%;
+  left: -50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 94%;
+  height: calc(100vh - 4%);
+  z-index: -1;
+  opacity: 0;
+  transition: left 0.3s ease-in-out; }
+  .ajax-container h1 {
+    height: 1500px; }
+  @media screen and (min-width: 700px) {
+    .ajax-container {
+      top: 20px;
+      width: calc(100% - 40px);
+      height: calc(100vh - 40px); } }
+  @media screen and (min-width: 1200px) {
+    .ajax-container {
+      top: 50px;
+      width: 92%;
+      height: calc(100vh - 100px); } }
+  @media screen and (min-width: 1600px) {
+    .ajax-container {
+      width: 1460px; } }
+  .ajax-container.is-visible {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+    left: 50%;
+    z-index: 102;
     opacity: 1;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1); }
+    overflow-y: scroll; }
+
+.ajax-container::-webkit-scrollbar {
+  width: 12px; }
+
+.ajax-container::-webkit-scrollbar-track {
+  background: #273642;
+  border-radius: 10px; }
+
+.ajax-container::-webkit-scrollbar-thumb {
+  background: #314452;
+  border-radius: 10px; }
+  .ajax-container::-webkit-scrollbar-thumb:hover {
+    background: #a83a24; }
 
 .button {
   color: #f0f0f0;
@@ -435,7 +479,8 @@ nav.main-nav::after {
 div.sections {
   padding: 0;
   margin: 0 auto;
-  max-width: 100%; }
+  max-width: 100%;
+  position: relative; }
   @media screen and (min-width: 700px) {
     div.sections {
       max-width: calc(100% - 40px); } }
