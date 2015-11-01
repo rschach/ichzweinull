@@ -7,10 +7,6 @@
       $menuToggle = $('.menu-toggle'),
       $mainHeader = $('.main-header');
 
-  function firstLinkActive () {
-    $menuLink.first().addClass('active');
-  }
-
   function onMenuToggleClick (e) {
     $menuToggle.toggleClass('is-open');
     $mainHeader.toggleClass('is-open');
@@ -35,7 +31,6 @@
   }
 
   $(document).ready(function(){
-    // firstLinkActive();
     $menuToggle.on('click', onMenuToggleClick);
     $('a[href^="#"]').on('click', onMenuLinkClick);
   });
@@ -57,3 +52,25 @@ $(window).scroll(function(){
     $header.removeClass('fixed');
   }
 });
+
+// Projects
+(function($){
+  var $body = $('html, body'),
+      $overlay = $('.overlay');
+
+  function onProjectClick (e) {
+    $overlay.addClass('is-visible');
+    $body.addClass('noscroll');
+  }
+
+  function onOverlayClick (e) {
+    $overlay.removeClass('is-visible');
+    $body.removeClass('noscroll');
+  }
+
+  $(document).ready(function(){
+    $('figure').on('click', onProjectClick);
+    $overlay.on('click', onOverlayClick);
+  });
+
+})(jQuery);
