@@ -7,6 +7,7 @@ body
   font-family: $base-font
   font-size: $base-font-size
   line-height: $base-line-height
+  -webkit-tap-highlight-color: transparentize($bg-lighter, 0.75)
 
   &.noscroll
     overflow: hidden
@@ -15,7 +16,15 @@ img
   max-width: 100%
   height: auto
 
+
 // Media Query Mixin
 =media($device)
   @media screen and (min-width: $device)
     @content
+
+// Clearfix
+%clearfix
+  &:after
+    content: ''
+    display: table
+    clear: both
