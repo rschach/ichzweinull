@@ -11,20 +11,17 @@
   opacity: 0
   transition: all 0.3s ease-in-out
 
-  h1
-    height: 1500px
-
   +media($small-med)
     width: $container-medium-width
     height: calc(100vh - 60px)
 
   +media($big)
-    top: 50px
     width: $container-large-width
-    height: calc(100vh - 70px)
 
   +media($huge)
+    top: 50px
     width: $container-max-width
+    height: calc(100vh - 70px)
 
   &.is-visible
     box-shadow: 0 1px 8px rgba(0,0,0,0.4)
@@ -32,6 +29,18 @@
     z-index: 102
     opacity: 1
     overflow-y: scroll
+
+  h1
+    font-size: $h2-font-size
+    line-height: $h2-line-height
+    // margin-top: $h2-margin-top
+    // margin-bottom: $h2-margin-bottom
+
+    &:after
+      margin: 12px auto
+
+
+// Custom Chrome Scrollbars
 
 .ajax-container::-webkit-scrollbar
   width: 12px
