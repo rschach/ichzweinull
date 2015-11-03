@@ -5,9 +5,10 @@
   margin: 0
   padding: 0 20px
   position: absolute
-  transition: padding 0.15s ease-in-out, max-height 0.2s ease-in-out
+  transition: padding 0.15s ease-in-out, max-height 0.2s ease-in-out, opacity 0.3s ease-in-out
   max-height: 50px
   overflow: hidden
+  opacity: 1
   display: flex
   align-items: center
   flex-wrap: wrap
@@ -48,6 +49,10 @@
 
     +media($huge)
       max-width: $container-max-width
+
+  &.noscroll
+    opacity: 0
+
 
 // Header Flex Elements
 .logo, .tagline, .menu-toggle

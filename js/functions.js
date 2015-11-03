@@ -26,7 +26,7 @@
     $mainHeader.removeClass('is-open');
 
     $body.animate({
-        scrollTop: $target.offset().top-45
+        scrollTop: $target.offset().top-50
     }, 300);
   }
 
@@ -56,18 +56,21 @@ $(window).scroll(function(){
 // Projects
 (function($){
   var $body = $('body'),
+      $mainHeader = $('.main-header')
       $overlay = $('.overlay'),
       $ajaxContainer = $('.ajax-container');
 
   function onProjectClick (e) {
-    $overlay.addClass('is-visible');
     $body.addClass('noscroll');
+    $mainHeader.addClass('noscroll');
+    $overlay.addClass('is-visible');
     $ajaxContainer.addClass('is-visible');
   }
 
   function onOverlayClick (e) {
-    $overlay.removeClass('is-visible');
     $body.removeClass('noscroll');
+    $mainHeader.removeClass('noscroll');
+    $overlay.removeClass('is-visible');
     $ajaxContainer.removeClass('is-visible');
   }
 
