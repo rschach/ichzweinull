@@ -210,7 +210,7 @@ h4 {
   margin: 0;
   padding: 0 20px;
   position: absolute;
-  transition: padding 0.15s ease-in-out, max-height 0.2s ease-in-out, opacity 0.3s ease-in-out;
+  transition: padding 0.2s ease-in-out, max-height 0.2s ease-in-out, opacity 0.3s ease-in-out;
   max-height: 50px;
   overflow: hidden;
   opacity: 1;
@@ -416,7 +416,7 @@ nav.main-nav::after {
   box-shadow: none;
   position: fixed;
   top: 40px;
-  left: 25%;
+  left: 20%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -443,11 +443,6 @@ nav.main-nav::after {
     z-index: 102;
     opacity: 1;
     overflow-y: scroll; }
-  .ajax-container h1 {
-    font-size: 1.5625em;
-    line-height: 1.92em; }
-    .ajax-container h1:after {
-      margin: 12px auto; }
 
 .ajax-container::-webkit-scrollbar {
   width: 12px; }
