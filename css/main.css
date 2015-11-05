@@ -412,11 +412,11 @@ nav.main-nav::after {
     z-index: 101;
     opacity: 1; }
 
-.ajax-container {
+.modal {
   background: #22303a;
   box-shadow: none;
   position: fixed;
-  top: 40px;
+  top: 50px;
   left: 20%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -427,48 +427,100 @@ nav.main-nav::after {
   opacity: 0;
   transition: all 0.3s ease-in-out; }
   @media screen and (min-width: 700px) {
-    .ajax-container {
+    .modal {
       width: calc(100% - 40px);
       height: calc(100vh - 60px); } }
   @media screen and (min-width: 1200px) {
-    .ajax-container {
+    .modal {
       width: 92%; } }
   @media screen and (min-width: 1600px) {
-    .ajax-container {
-      top: 50px;
+    .modal {
       width: 1460px;
       height: calc(100vh - 70px); } }
-  .ajax-container.is-visible {
+  .modal.is-visible {
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
     left: 50%;
     z-index: 102;
     opacity: 1;
     overflow-y: scroll; }
-  .ajax-container h1:after {
+  .modal h1:after {
     margin-bottom: 36px; }
-  .ajax-container img {
+  .modal img {
     margin: 0 auto;
     float: none;
     display: block; }
-  .ajax-container .content {
+  .modal .content {
     max-width: 90%;
     margin: 0 auto; }
     @media screen and (min-width: 700px) {
-      .ajax-container .content {
+      .modal .content {
         max-width: 600px; } }
 
-.ajax-container::-webkit-scrollbar {
+.modal::-webkit-scrollbar {
   width: 12px; }
 
-.ajax-container::-webkit-scrollbar-track {
+.modal::-webkit-scrollbar-track {
   background: #283844;
   border-radius: 10px; }
 
-.ajax-container::-webkit-scrollbar-thumb {
+.modal::-webkit-scrollbar-thumb {
   background: #334857;
   border-radius: 10px; }
-  .ajax-container::-webkit-scrollbar-thumb:hover {
+  .modal::-webkit-scrollbar-thumb:hover {
     background: #a83a24; }
+
+.close {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out; }
+  .close.is-visible {
+    opacity: 1;
+    z-index: 103;
+    right: 5%; }
+    @media screen and (min-width: 700px) {
+      .close.is-visible {
+        right: 20px; } }
+  .close .close-bar, .close .close-bar:before, .close .close-bar:after {
+    content: '';
+    background: transparent;
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 4px; }
+  .close .close-bar:before, .close .close-bar::after {
+    background: #f0f0f0;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    transition: background 0.2s ease-in-out; }
+  .close .close-bar:before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0; }
+  .close .close-bar:after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: -4px; }
+  .close:hover {
+    cursor: pointer; }
+    .close:hover .close-bar:before, .close:hover .close-bar:after {
+      background: #a83a24; }
 
 .button {
   color: #f0f0f0;

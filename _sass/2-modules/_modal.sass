@@ -1,8 +1,8 @@
-.ajax-container
+.modal
   background: $bg-lighter
   box-shadow: none
   position: fixed
-  top: 40px
+  top: 50px
   left: 20%
   transform: translateX(-50%)
   width: 90%
@@ -19,7 +19,6 @@
     width: $container-large-width
 
   +media($huge)
-    top: 50px
     width: $container-max-width
     height: calc(100vh - 70px)
 
@@ -51,14 +50,14 @@
 
 // Custom Chrome Scrollbars
 
-.ajax-container::-webkit-scrollbar
+.modal::-webkit-scrollbar
   width: 12px
 
-.ajax-container::-webkit-scrollbar-track
+.modal::-webkit-scrollbar-track
   background: lighten($bg-lighter, 3%)
   border-radius: 10px
 
-.ajax-container::-webkit-scrollbar-thumb
+.modal::-webkit-scrollbar-thumb
   background: lighten($bg-lighter, 9%)
   border-radius: 10px
 

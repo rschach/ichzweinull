@@ -58,25 +58,29 @@ $(window).scroll(function(){
   var $body = $('body'),
       $mainHeader = $('.main-header')
       $overlay = $('.overlay'),
-      $ajaxContainer = $('.ajax-container');
+      $modal = $('.modal'),
+      $close = $('.close');
 
   function onProjectClick (e) {
     $body.addClass('noscroll');
     $mainHeader.addClass('noscroll');
     $overlay.addClass('is-visible');
-    $ajaxContainer.addClass('is-visible');
+    $modal.addClass('is-visible');
+    $close.addClass('is-visible');
   }
 
   function onOverlayClick (e) {
     $body.removeClass('noscroll');
     $mainHeader.removeClass('noscroll');
     $overlay.removeClass('is-visible');
-    $ajaxContainer.removeClass('is-visible');
+    $modal.removeClass('is-visible');
+    $close.removeClass('is-visible');
   }
 
   $(document).ready(function(){
     $('figure').on('click', onProjectClick);
     $overlay.on('click', onOverlayClick);
+    $close.on('click', onOverlayClick);
   });
 
 })(jQuery);

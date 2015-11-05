@@ -1,0 +1,46 @@
+.close
+  width: 50px
+  height: 50px
+  position: fixed
+  top: 0
+  right: 0
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  opacity: 0
+  z-index: -1
+  transition: all .3s ease-in-out
+
+  &.is-visible
+    opacity: 1
+    z-index: 103
+    right: 5%
+
+    +media($small-med)
+      right: 20px
+
+  .close-bar, .close-bar:before, .close-bar:after
+    content: ''
+    background: transparent
+    display: block
+    position: relative
+    width: 20px
+    height: 4px
+
+  .close-bar:before, .close-bar::after
+    background: $neutral
+    transform-origin: center
+    transition: background .2s ease-in-out
+
+  .close-bar:before
+    transform: rotate(45deg)
+    top: 0
+
+  .close-bar:after
+    transform: rotate(-45deg)
+    top: -4px
+
+  &:hover
+    cursor: pointer
+    .close-bar:before, .close-bar:after
+      background: $primary
