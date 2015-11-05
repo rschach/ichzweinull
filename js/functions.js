@@ -84,3 +84,28 @@ $(window).scroll(function(){
   });
 
 })(jQuery);
+
+// Projects Ajax
+
+(function($) {
+
+  function  workLoad() {
+    $.ajaxSetup({ cache: true });
+
+    $('figure').on('click', function() {
+    var $this = $(this),
+        newProject = $this.find('figcaption').data('project'),
+        spinner = '<div class="loader">Loading...</div>',
+        newHTML = 'projects/' + newProject + '.html';
+
+        console.log(newHTML);
+
+        $('.modal').load(newHTML);
+    });
+  }
+
+  $(document).ready(function(){
+    workLoad();
+  });
+
+})(jQuery);
