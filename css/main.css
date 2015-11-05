@@ -444,16 +444,28 @@ nav.main-nav::after {
     z-index: 102;
     opacity: 1;
     overflow-y: scroll; }
+  .ajax-container h1:after {
+    margin-bottom: 36px; }
+  .ajax-container img {
+    margin: 0 auto;
+    float: none;
+    display: block; }
+  .ajax-container .content {
+    max-width: 90%;
+    margin: 0 auto; }
+    @media screen and (min-width: 700px) {
+      .ajax-container .content {
+        max-width: 600px; } }
 
 .ajax-container::-webkit-scrollbar {
   width: 12px; }
 
 .ajax-container::-webkit-scrollbar-track {
-  background: #273642;
+  background: #283844;
   border-radius: 10px; }
 
 .ajax-container::-webkit-scrollbar-thumb {
-  background: #314452;
+  background: #334857;
   border-radius: 10px; }
   .ajax-container::-webkit-scrollbar-thumb:hover {
     background: #a83a24; }
@@ -476,6 +488,10 @@ nav.main-nav::after {
     color: #a83a24;
     background: #f0f0f0;
     border-color: #f0f0f0; }
+
+.projects figure:hover .button {
+  background: #f0f0f0;
+  color: #a83a24; }
 
 div.sections {
   padding: 0;

@@ -30,6 +30,24 @@
     opacity: 1
     overflow-y: scroll
 
+  h1
+
+    &:after
+      margin-bottom: 36px
+
+  img
+    margin: 0 auto
+    float: none
+    display: block
+
+
+  .content
+    max-width: 90%
+    margin: 0 auto
+
+    +media($small-med)
+      max-width: 600px
+
 
 // Custom Chrome Scrollbars
 
@@ -37,11 +55,11 @@
   width: 12px
 
 .ajax-container::-webkit-scrollbar-track
-  background: lighten($bg-lighter, 2.5%)
+  background: lighten($bg-lighter, 3%)
   border-radius: 10px
 
 .ajax-container::-webkit-scrollbar-thumb
-  background: lighten($bg-lighter, 7.5%)
+  background: lighten($bg-lighter, 9%)
   border-radius: 10px
 
   &:hover
