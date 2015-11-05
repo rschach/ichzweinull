@@ -94,13 +94,11 @@ $(window).scroll(function(){
 
     $('figure').on('click', function() {
     var $this = $(this),
-        newProject = $this.find('figcaption').data('project'),
-        spinner = '<div class="loader">Loading...</div>',
-        newHTML = 'projects/' + newProject + '.html';
+      newProject = $this.find('figcaption').data('project'),
+      spinner = '<div class="loader">Loading...</div>',
+      newHTML = 'projects/' + newProject + '.html';
 
-        console.log(newHTML);
-
-        $('.modal').load(newHTML);
+      $('.modal').load(newHTML);
     });
   }
 
