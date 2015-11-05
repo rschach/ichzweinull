@@ -2,7 +2,7 @@
   background: $bg-lighter
   box-shadow: none
   position: fixed
-  top: 50px
+  top: 40px
   left: 20%
   transform: translateX(-50%)
   width: 90%
@@ -11,7 +11,7 @@
   opacity: 0
   transition: all 0.3s ease-in-out
 
-  +media($small-med)
+  +media($small)
     width: $container-medium-width
     height: calc(100vh - 60px)
 
@@ -19,6 +19,7 @@
     width: $container-large-width
 
   +media($huge)
+    top: 50px
     width: $container-max-width
     height: calc(100vh - 70px)
 
