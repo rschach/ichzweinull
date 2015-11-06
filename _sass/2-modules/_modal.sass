@@ -11,6 +11,11 @@
   opacity: 0
   transition: all 0.3s ease-in-out
 
+  img
+    margin: 0 auto
+    float: none
+    display: block
+
   +media($small)
     width: $container-medium-width
     height: calc(100vh - 60px)
@@ -30,26 +35,20 @@
     opacity: 1
     overflow-y: scroll
 
-  h1
-    margin-top: 1.9em
-    &:after
-      margin: 16px auto 42px
+//Temporary - REFACTOR
+h1
+  margin-top: 1.75em
+  &:after
+    margin: 12px auto 30px
+
+.content
+  max-width: 600px
+  margin: 0 auto
+  text-align: center
 
   p
-    color: #d0d0d0
+    margin-bottom: 500px
 
-  img
-    margin: 0 auto
-    float: none
-    display: block
-
-
-  .content
-    max-width: 90%
-    margin: 0 auto
-
-    +media($small-med)
-      max-width: 600px
 
 
 // Custom Chrome Scrollbars

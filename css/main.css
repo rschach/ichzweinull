@@ -426,6 +426,10 @@ nav.main-nav::after {
   z-index: -1;
   opacity: 0;
   transition: all 0.3s ease-in-out; }
+  .modal img {
+    margin: 0 auto;
+    float: none;
+    display: block; }
   @media screen and (min-width: 600px) {
     .modal {
       width: calc(100% - 40px);
@@ -444,22 +448,18 @@ nav.main-nav::after {
     z-index: 102;
     opacity: 1;
     overflow-y: scroll; }
-  .modal h1 {
-    margin-top: 1.9em; }
-    .modal h1:after {
-      margin: 16px auto 42px; }
-  .modal p {
-    color: #d0d0d0; }
-  .modal img {
-    margin: 0 auto;
-    float: none;
-    display: block; }
-  .modal .content {
-    max-width: 90%;
-    margin: 0 auto; }
-    @media screen and (min-width: 700px) {
-      .modal .content {
-        max-width: 600px; } }
+
+h1 {
+  margin-top: 1.75em; }
+  h1:after {
+    margin: 12px auto 30px; }
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center; }
+  .content p {
+    margin-bottom: 500px; }
 
 .modal::-webkit-scrollbar {
   width: 12px; }
