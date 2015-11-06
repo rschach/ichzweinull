@@ -87,23 +87,31 @@ $(window).scroll(function(){
 
 // Projects Ajax
 
+$(document).ajaxStart(function(){
+  //$('#ajaxBusy').show();
+  console.log('ajaxStart');
+}).ajaxStop(function(){
+  //$('#ajaxBusy').hide();
+  console.log('ajaxStop');
+});
+
 (function($) {
 
-  function  workLoad() {
-    $.ajaxSetup({ cache: true });
+  function  projectLoad() {
+    $.ajax({cache:false});
 
     $('figure').on('click', function() {
-    var $this = $(this),
-      newProject = $this.find('figcaption').data('project'),
-      spinner = '<div class="loader">Loading...</div>',
-      newHTML = 'projects/' + newProject + '.html';
 
-      $('.modal').load(newHTML);
+    var $this = $(this),
+        newProject = $this.find('figcaption').data('project'),
+        newHTML = 'projects/' + newProject + '.html';
+
+        $('.modal').load(newHTML);
     });
   }
 
   $(document).ready(function(){
-    workLoad();
+    projectLoad();
   });
 
 })(jQuery);
