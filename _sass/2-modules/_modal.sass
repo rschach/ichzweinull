@@ -35,33 +35,33 @@
     opacity: 1
     overflow-y: scroll
 
-//Temporary - REFACTOR
-h1
-  margin-top: 1.75em
-  &:after
-    margin: 12px auto 30px
 
-.content
-  max-width: 600px
-  margin: 0 auto
-  text-align: center
+  h1
+    margin-top: 1.75em
+    &:after
+      margin: 12px auto 30px
 
-  p
-    margin-bottom: 500px
+  .content
+    max-width: 600px
+    margin: 0 auto
+    text-align: center
+
+    p
+      margin-bottom: 500px
 
 
 
 // Custom Chrome Scrollbars
 
 .modal::-webkit-scrollbar
-  width: 12px
+  width: 10px
 
 .modal::-webkit-scrollbar-track
   background: lighten($bg-lighter, 3%)
   border-radius: 10px
 
 .modal::-webkit-scrollbar-thumb
-  background: lighten($bg-lighter, 9%)
+  background: lighten($bg-lighter, 10%)
   border-radius: 10px
 
   &:hover
