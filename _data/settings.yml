@@ -5,6 +5,6 @@ menu:
 - {title: Kontakt, url: 'contact'}
 
 projects:
-- {title: Personal Excellence, image: personal-excellence.jpg, folder: 'project-1', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
-- {title: Werkraum, image: werkraum.jpg, folder: 'project-2', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
-- {title: Kleine Nachtrevue, image: kleine-nachtrevue.jpg, folder: 'project-3', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
+- {title: Personal Excellence, image: personal-excellence.jpg, folder: 'project-1', header: 'header-1', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
+- {title: Werkraum, image: werkraum.jpg, folder: 'project-2', header: 'header-2', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
+- {title: Kleine Nachtrevue, image: kleine-nachtrevue.jpg, folder: 'project-3', header: 'header-3', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}

@@ -87,30 +87,41 @@ $(window).scroll(function(){
 
 // Projects Ajax
 
-$(document).ajaxStart(function(){
-  //$('#ajaxBusy').show();
-  console.log('ajaxStart');
-}).ajaxStop(function(){
-  //$('#ajaxBusy').hide();
-  console.log('ajaxStop');
-});
-
 (function($) {
 
   function  projectLoad() {
     $.ajax({cache:false});
 
+    $(document).ajaxStart(function(){
+      $('#ajaxBusy').show();
+      console.log('ajaxStart');
+    }).ajaxStop(function(){
+      $('#ajaxBusy').fadeOut(300);
+      console.log('ajaxStop');
+    });
+
     $('figure').on('click', function() {
 
     var $this = $(this),
-        newProject = $this.find('figcaption').data('project'),
-        newHTML = 'projects/' + newProject + '.html';
+        project = $this.find('figcaption').data('project'),
+        image = $this.find('figcaption').data('header'),
+        title = $this.find('h2').text(),
+        content = 'projects/' + project + '.html',
+        header = 'projects/' + image + '.jpg';
 
-        $('.modal').load(newHTML);
+        $('.modal-title').text(title);
+        $('.modal-content').load(content);
+        $('.modal-header').html('<img src="' + header + '" />');
+        console.log(header);
     });
   }
 
+  function loadingState() {
+    $('.modal').append('<div id="ajaxBusy"><img src="img/loader.gif"></div>');
+  }
+
   $(document).ready(function(){
+    loadingState();
     projectLoad();
   });
 
