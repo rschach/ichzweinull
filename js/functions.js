@@ -89,40 +89,54 @@ $(window).scroll(function(){
 
 (function($) {
 
-  function  projectLoad() {
-    $.ajax({cache:false});
+  $(document).ajaxStart(function(){
+    $('#ajaxBusy').show();
+    console.log('ajaxStart');
+  }).ajaxStop(function(){
+    console.log('ajaxStop');
+  });
 
-    $(document).ajaxStart(function(){
-      $('#ajaxBusy').show();
-      console.log('ajaxStart');
-    }).ajaxStop(function(){
-      $('#ajaxBusy').fadeOut(300);
-      console.log('ajaxStop');
-    });
-
-    $('figure').on('click', function() {
+  function projectLoad() {
 
     var $this = $(this),
-        project = $this.find('figcaption').data('project'),
-        image = $this.find('figcaption').data('header'),
-        title = $this.find('h2').text(),
-        content = 'projects/' + project + '.html',
-        header = 'projects/' + image + '.jpg';
+        getProject = $this.find('figcaption').data('project'),
+        getHeader  = $this.find('figcaption').data('header'),
+        getTitle   = $this.find('h2').text(),
+        newProject = 'projects/' + getProject + '.html',
+        newHeader  = 'projects/' + getHeader + '.jpg';
 
-        $('.modal-title').text(title);
-        $('.modal-content').load(content);
-        $('.modal-header').html('<img src="' + header + '" />');
-        console.log(header);
+    $('.modal-title').text(getTitle);
+
+    $.ajax ({
+      type: "GET",
+      url: newProject,
+      contentType: "html",
+      success: function(){
+      $('.modal-content').load(newProject); },
     });
-  }
+
+    $.ajax({
+      type: "GET",
+      url: newHeader,
+      contentType: "image/jpeg",
+      success: function(){
+      $('.modal-header').html('<img src="' + newHeader + '" />');
+      $('.modal-header img').on('load', function() {
+        $('#ajaxBusy').fadeOut(300);
+        console.log('imageLoaded');
+        }).each(function() {
+          if(this.complete) $(this).load();
+        });},
+      });
+    }
 
   function loadingState() {
     $('.modal').append('<div id="ajaxBusy"><img src="img/loader.gif"></div>');
   }
 
   $(document).ready(function(){
+    $('figure').on('click', projectLoad);
     loadingState();
-    projectLoad();
   });
 
 })(jQuery);
