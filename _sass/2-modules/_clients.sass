@@ -1,16 +1,27 @@
+.about-temp
+  height: 600px
+
 .clients-wrap
   background: $secondary
-  padding: 40px 0
+  padding: 80px 0 120px
+  position: relative
 
   .client
-    max-width: 515px
+    max-width: 620px
+    position: relative
     margin: 0 auto
+    display: none
+    animation: animation 1000ms linear both;
 
+    &.active
+      display: block
+
+// Single Client
 .client-info
   text-align: center
 
   img
-    max-width: 60px
+    max-width: 74px
 
   a
     color: $neutral
@@ -28,10 +39,48 @@
     text-transform: uppercase
 
 .client-text
-
   p
-    text-align: center
-    font-size: 1.125em
+    text-align: left
+    font-size: $h3-font-size
     font-weight: 300
     line-height: 1.825
     margin-top: 1em
+    position: relative
+
+    &:before, &:after
+      content: '\e904'
+      font-family: icomoon
+      display: inline
+      position: absolute
+      font-size: 1.825em
+      padding: 0
+      line-height: 1
+      color: $primary
+
+    &:before
+      margin: -10px 0 0 -40px
+      transform: rotate(180deg)
+
+    &:after
+      margin: 10px 0 0 10px
+
+.client-counter
+  max-width: 100%
+  margin: 36px auto 0
+  text-align: center
+
+  > div
+    width: 10px
+    height: 10px
+    background: lighten($secondary, 10%)
+    border-radius: 50%
+    display: inline-block
+    margin: 0 10px 0 0
+    cursor: pointer
+    transition: all .2s ease-in-out
+
+    &:last-of-type
+      margin: 0
+
+    &:hover, &.active
+      background: lighten($secondary, 22.5%)

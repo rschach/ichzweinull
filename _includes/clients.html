@@ -1,6 +1,6 @@
 <div class="clients-wrap">
   {% for client in site.data.settings.clients %}
-  <div class="client">
+  <div class="client {% if forloop.first %}active{% endif %}">
     <div class="client-info">
       <img src="img/clients/{{ client.image }}" alt="{{ client.name }}" />
       <strong class="client-name">{{ client.name }}</strong>
@@ -11,4 +11,9 @@
     </div>
   </div>
   {% endfor %}
+  <div class="client-counter">
+    {% for client in site.data.settings.clients %}
+    <div class="{% if forloop.first %}active{% endif %}"></div>
+    {% endfor %}
+  </div>
 </div>
