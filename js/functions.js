@@ -107,13 +107,9 @@ $(window).scroll(function(){
 
     $('.modal-title').text(getTitle);
 
-    $.ajax ({
-      type: "GET",
-      url: newProject,
-      contentType: "html",
-      success: function(){
-      $('.modal-content').load(newProject); },
-    });
+  
+      $('.modal-content').load(newProject);
+
 
     $.ajax({
       type: "GET",
