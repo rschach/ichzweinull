@@ -1,0 +1,14 @@
+<div class="clients-wrap">
+  {% for client in site.data.settings.clients %}
+  <div class="client">
+    <div class="client-info">
+      <img src="img/clients/{{ client.image }}" alt="{{ client.name }}" />
+      <strong class="client-name">{{ client.name }}</strong>
+      <span class="client-company">{{ client.company }}</span>
+    </div>
+    <div class="client-text">
+      <p>{{ client.text }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
