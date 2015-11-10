@@ -106,10 +106,7 @@ $(window).scroll(function(){
         newHeader  = 'projects/' + getHeader + '.jpg';
 
     $('.modal-title').text(getTitle);
-
-  
-      $('.modal-content').load(newProject);
-
+    $('.modal-content').load(newProject);
 
     $.ajax({
       type: "GET",
@@ -136,3 +133,26 @@ $(window).scroll(function(){
   });
 
 })(jQuery);
+
+// Clint Quotes
+(function($){
+
+  var $client = $('.client'),
+      $clientCounter = $('.client-counter > div')
+
+  function onClientCounterClick() {
+
+    var $this = $(this),
+        position = $this.parent().children().index($this);
+
+    $clientCounter.removeClass('active').eq(position).addClass('active');
+    $client.removeClass('active').eq(position).addClass('active');
+    console.log(position)
+
+  }
+
+  $(document).ready(function(){
+    $clientCounter.on('click', onClientCounterClick);
+  });
+
+})(jQuery)

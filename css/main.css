@@ -757,14 +757,15 @@ nav.main-nav::after {
 .clients-wrap {
   background: #286167;
   padding: 80px 0 120px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 400px; }
   .clients-wrap .client {
     max-width: 620px;
     position: relative;
     margin: 0 auto;
     display: none;
-    -webkit-animation: animation 1000ms linear both;
-            animation: animation 1000ms linear both; }
+    -webkit-animation: animation 750ms linear both;
+            animation: animation 750ms linear both; }
     .clients-wrap .client.active {
       display: block; }
 
@@ -811,7 +812,7 @@ nav.main-nav::after {
 
 .client-counter {
   max-width: 100%;
-  margin: 36px auto 0;
+  margin: 48px auto 0;
   text-align: center; }
   .client-counter > div {
     width: 10px;
