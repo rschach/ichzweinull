@@ -134,11 +134,12 @@ $(window).scroll(function(){
 
 })(jQuery);
 
-// Clint Quotes
+// Client Quotes
 (function($){
 
   var $client = $('.client'),
-      $clientCounter = $('.client-counter > div')
+      $clientWrap = $('.clients-wrap'),
+      $clientCounter = $('.client-counter > div');
 
   function onClientCounterClick() {
 
@@ -147,12 +148,44 @@ $(window).scroll(function(){
 
     $clientCounter.removeClass('active').eq(position).addClass('active');
     $client.removeClass('active').eq(position).addClass('active');
-    console.log(position)
+  }
 
+  function onClientNavClick() {
+
+    var $this = $(this),
+        activeClient = $clientWrap.find('.active'),
+        position = $clientWrap.children().index(activeClient),
+        clientLength = $client.length;
+
+
+    if($this.hasClass('client-next')) {
+
+      if(position < clientLength -1) {
+        activeClient.removeClass('active').next().addClass('active');
+      }
+
+      else {
+        $client.removeClass('active').first().addClass('active');
+        $clientCounter.removeClass('active').first().addClass('active')
+      }
+    }
+
+    else {
+
+      if(position === 0) {
+        $client.removeClass('active').last().addClass('active');
+        $clientCounter.removeClass('active').last().addClass('active')
+      }
+
+      else {
+        activeClient.removeClass('active').prev().addClass('active');
+      }
+    }
   }
 
   $(document).ready(function(){
     $clientCounter.on('click', onClientCounterClick);
+    $('.client-prev, .client-next').on('click', onClientNavClick);
   });
 
 })(jQuery)
