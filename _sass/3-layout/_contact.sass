@@ -1,3 +1,47 @@
+header
+  padding: 40px 0 0
+
 .contact
   background: $bg-lighter
-  min-height: 100vh
+
+.contact-form
+  max-width: 500px
+  margin: 0 auto
+  padding: 60px 0
+
+  input, textarea
+    width: 100%
+    border: 0
+    font-size: 90%
+
+  input, textarea
+    background: darken($bg-lighter, 2.5%)
+    border: 1px solid lighten($bg-lighter, 5%)
+    box-shadow: 0 1px 4px rgba(0,0,0,.25) inset
+    padding: 6px 8px
+    margin-bottom: 18px
+
+  textarea
+    height: 120px
+    margin-bottom: 24px
+
+  input[type="submit"]
+    background: $primary
+    padding: 16px 0
+    line-height: 1
+    font-size: 75%
+    font-weight: 700
+    letter-spacing: 2px
+    text-transform: uppercase
+    box-shadow: none
+    transition: all .2s ease-in-out
+
+    &:hover
+      background: lighten($primary, 5%)
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+    color: darken($neutral, 25%)
+    font-size: 90%
+  ::-moz-placeholder
+  :-ms-input-placeholder
+  input:-moz-placeholder

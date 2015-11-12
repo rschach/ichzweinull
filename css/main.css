@@ -802,12 +802,12 @@ nav.main-nav::after {
     line-height: 1;
     color: #a83a24; }
   .client-text p:before {
-    margin: -10px 0 0 -40px;
+    margin: -6px 0 0 -44px;
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
   .client-text p:after {
-    margin: 10px 0 0 10px; }
+    margin: 6px 0 0 10px; }
 
 .client-counter {
   max-width: 100%;
@@ -962,9 +962,45 @@ figure {
   background: #22303a;
   min-height: 100vh; }
 
+header {
+  padding: 40px 0 0; }
+
 .contact {
-  background: #22303a;
-  min-height: 100vh; }
+  background: #22303a; }
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 60px 0;
+  input: -moz-placeholder; }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    border: 0;
+    font-size: 90%; }
+  .contact-form input, .contact-form textarea {
+    background: #1e2932;
+    border: 1px solid #2c3d4a;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) inset;
+    padding: 6px 8px;
+    margin-bottom: 18px; }
+  .contact-form textarea {
+    height: 120px;
+    margin-bottom: 24px; }
+  .contact-form input[type="submit"] {
+    background: #a83a24;
+    padding: 16px 0;
+    line-height: 1;
+    font-size: 75%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out; }
+    .contact-form input[type="submit"]:hover {
+      background: #bd3f29; }
+  .contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
+    color: #b0b0b0;
+    font-size: 90%; }
 
 footer {
   background: #22303a;
