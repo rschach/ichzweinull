@@ -751,9 +751,6 @@ nav.main-nav::after {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     top: -1px; }
 
-.about-temp {
-  height: 600px; }
-
 .clients-wrap {
   background: #286167;
   padding: 80px 0 120px;
@@ -763,8 +760,8 @@ nav.main-nav::after {
     position: relative;
     margin: 0 auto;
     display: none;
-    -webkit-animation: animation 1000ms linear both;
-            animation: animation 1000ms linear both; }
+    -webkit-animation: animation 750ms linear both;
+            animation: animation 750ms linear both; }
     .clients-wrap .client.active {
       display: block; }
 
@@ -890,7 +887,7 @@ section {
 .home {
   background: #22303a;
   position: relative;
-  margin: 0 0 20px;
+  margin: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -901,11 +898,11 @@ section {
       -ms-flex-align: baseline;
           align-items: baseline; }
   .home .container {
-    max-width: 390px;
+    max-width: 460px;
     margin: 21vh auto 0; }
     @media screen and (min-width: 1000px) {
       .home .container {
-        margin-top: 24vh; } }
+        margin-top: 28vh; } }
     .home .container p {
       text-align: center; }
 
@@ -918,6 +915,8 @@ figure {
   position: relative;
   cursor: pointer;
   overflow: hidden; }
+  figure:last-of-type {
+    margin: 0; }
   figure img {
     display: block; }
   figure figcaption {
@@ -956,7 +955,7 @@ figure {
         left: auto;
         right: 0; } }
   figure:nth-of-type(2n) .button {
-    color: #172027; }
+    color: #22303a; }
 
 .about {
   background: #22303a;
@@ -969,7 +968,7 @@ header {
   background: #22303a; }
 
 .contact-form {
-  max-width: 500px;
+  max-width: 540px;
   margin: 0 auto;
   padding: 50px 0 0; }
   .contact-form input, .contact-form textarea {
