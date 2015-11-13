@@ -879,10 +879,10 @@ section {
   min-height: 68vh; }
   @media screen and (min-width: 1000px) {
     section {
-      min-height: 85vh; } }
-  @media screen and (min-width: 1600px) {
+      min-height: 90vh; } }
+  @media screen and (min-width: 1400px) {
     section {
-      min-height: 75vh; } }
+      min-height: 82.5vh; } }
 
 .home {
   background: #22303a;
@@ -959,7 +959,14 @@ figure {
 
 .about {
   background: #22303a;
-  min-height: 100vh; }
+  min-height: auto;
+  padding: 60px 0 0; }
+
+.about-temp {
+  margin: 0 auto 120px;
+  max-width: 500px; }
+  .about-temp p {
+    text-align: left; }
 
 header {
   padding: 60px 0 0; }
@@ -968,7 +975,7 @@ header {
   background: #22303a; }
 
 .contact-form {
-  max-width: 540px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 50px 0 0; }
   .contact-form input, .contact-form textarea {
