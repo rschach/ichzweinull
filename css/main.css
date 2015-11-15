@@ -615,7 +615,7 @@ nav.main-nav::after {
   opacity: 0;
   transition: all 0.3s ease-in-out; }
   .modal img {
-    margin: 0 auto;
+    margin: 0;
     float: none;
     display: block; }
   @media screen and (min-width: 600px) {
@@ -642,7 +642,7 @@ nav.main-nav::after {
       margin: 12px auto 30px; }
   .modal .modal-header {
     background: #f0f0f0;
-    padding: 96px 12px 12px 0; }
+    padding: 108px 24px 0 0; }
   .modal .modal-content {
     padding: 48px 0;
     max-width: 600px;
@@ -650,7 +650,7 @@ nav.main-nav::after {
     text-align: center; }
 
 .modal::-webkit-scrollbar {
-  width: 12px; }
+  width: 8px; }
 
 .modal::-webkit-scrollbar-track {
   background: #283844; }
@@ -717,7 +717,7 @@ nav.main-nav::after {
       background: #a83a24; }
 
 #ajaxBusy {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
