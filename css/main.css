@@ -636,25 +636,27 @@ nav.main-nav::after {
     z-index: 102;
     opacity: 1;
     overflow-y: scroll; }
-  .modal h1 {
-    margin-top: 1.75em; }
-    .modal h1:after {
+  .modal h1.modal-title {
+    padding: 36px 0; }
+    .modal h1.modal-title:after {
       margin: 12px auto 30px; }
+  .modal .modal-header {
+    background: #f0f0f0;
+    padding: 96px 12px 12px 0; }
   .modal .modal-content {
+    padding: 48px 0;
     max-width: 600px;
     margin: 0 auto;
     text-align: center; }
 
 .modal::-webkit-scrollbar {
-  width: 10px; }
+  width: 12px; }
 
 .modal::-webkit-scrollbar-track {
-  background: #283844;
-  border-radius: 10px; }
+  background: #283844; }
 
 .modal::-webkit-scrollbar-thumb {
-  background: #354a5a;
-  border-radius: 10px; }
+  background: #a83a24; }
   .modal::-webkit-scrollbar-thumb:hover {
     background: #a83a24; }
 

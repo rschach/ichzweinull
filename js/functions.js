@@ -103,7 +103,7 @@ $(window).scroll(function(){
         getHeader  = $this.find('figcaption').data('header'),
         getTitle   = $this.find('h2').text(),
         newProject = 'projects/' + getProject + '.html',
-        newHeader  = 'projects/' + getHeader + '.jpg';
+        newHeader  = 'projects/' + getHeader + '.png';
 
     $('.modal-title').text(getTitle);
     $('.modal-content').load(newProject);
@@ -111,7 +111,7 @@ $(window).scroll(function(){
     $.ajax({
       type: "GET",
       url: newHeader,
-      contentType: "image/jpeg",
+      contentType: "image/png",
       success: function(){
       $('.modal-header').html('<img src="' + newHeader + '" />');
       $('.modal-header img').on('load', function() {
