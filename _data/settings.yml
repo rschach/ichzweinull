@@ -5,9 +5,9 @@ menu:
 - {title: Kontakt, url: 'contact'}
 
 projects:
-- {title: Personal Excellence, image: personal-excellence.jpg, folder: 'project-1', header: 'test-08', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
-- {title: Werkraum, image: werkraum.jpg, folder: 'project-2', header: 'header-2', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
-- {title: Kleine Nachtrevue, image: kleine-nachtrevue.jpg, folder: 'project-3', header: 'header-3', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
+- {title: Personal Excellence, image: personal-excellence.jpg, folder: 'project-1', header: 'project-1', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
+- {title: Louis Busman, image: louis-busman.jpg, folder: 'project-2', header: 'project-2', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
+- {title: Kleine Nachtrevue, image: kleine-nachtrevue.jpg, folder: 'project-3', header: 'project-3', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'}
 
 clients:
 - {name: Uwe Schmidt, company: Werkraum, image: uwe-schmidt.png, text: 'Sascha Mersch hat mich von der ersten Idee bis zum Launch komplett begleitet und zu einer wunderbaren Website verholfen, die bei meinen Kunden ohne Ausnahme großen Eindruck hinterlassen hat.'}
