@@ -330,14 +330,15 @@ td, th {
 * {
   box-sizing: border-box; }
 
-body {
+html, body {
+  height: 100%;
   background: #172027;
   color: #f0f0f0;
   font-family: 'Neue Haas Unica W01', 'Nimbus Sans L', Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5;
   -webkit-tap-highlight-color: rgba(34, 47, 58, 0.25); }
-  body.noscroll {
+  html.noscroll, body.noscroll {
     overflow: hidden; }
 
 img {
@@ -595,7 +596,8 @@ nav.main-nav::after {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateZ(0); }
   .overlay.is-visible {
     z-index: 101;
     opacity: 1; }
@@ -865,8 +867,9 @@ nav.main-nav::after {
 div.sections {
   padding: 0;
   margin: 0 auto;
-  max-width: 100%;
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  max-width: 100%; }
   @media screen and (min-width: 700px) {
     div.sections {
       max-width: calc(100% - 40px); } }
@@ -1026,4 +1029,4 @@ header {
 
 footer {
   background: #22303a;
-  min-height: 25vh; }
+  min-height: 400px; }
