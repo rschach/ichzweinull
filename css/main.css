@@ -346,7 +346,7 @@ img {
   height: auto; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Neue Haas Unica W01', Impact;
+  font-family: 'Neue Haas Unica W01', 'Nimbus Sans L', Helvetica, Arial, sans-serif;
   text-align: center;
   font-weight: 300; }
 
