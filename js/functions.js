@@ -75,6 +75,10 @@ $(window).scroll(function(){
     $overlay.removeClass('is-visible');
     $modal.removeClass('is-visible');
     $close.removeClass('is-visible');
+    setTimeout(function() {
+      $modal.scrollTop(0);
+      console.log('Modal scrolled');
+    }, 300);
   }
 
   $(document).ready(function(){

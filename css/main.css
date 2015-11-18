@@ -615,6 +615,7 @@ nav.main-nav::after {
   height: calc(100vh - 60px);
   z-index: -1;
   opacity: 0;
+  overflow-y: scroll;
   transition: all 0.3s ease-in-out; }
   .modal img {
     margin: 0;
@@ -636,8 +637,7 @@ nav.main-nav::after {
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
     left: 50%;
     z-index: 102;
-    opacity: 1;
-    overflow-y: scroll; }
+    opacity: 1; }
   .modal h1.modal-title {
     padding: 36px 0; }
     .modal h1.modal-title:after {
