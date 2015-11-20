@@ -37,20 +37,28 @@
 
   // Modal Heading
   header
-    padding: 12px 0 24px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
+    height: 160px
+
     +media($small)
-      padding: 48px 0 60px
+      height: 200px
+    +media($small-med)
+      height: 228px
 
   h1.modal-title
     font-size: 1.5em
     line-height: 1
+    margin: 0
     &:after
-      margin: 12px auto 24px
+      margin: 12px auto 0
 
     +media($small)
       font-size: $h1-font-size
       &:after
-        margin: 18px auto 24px
+        margin: 18px auto 0
 
   // Modal Image
   .modal-header
@@ -58,6 +66,8 @@
     padding: 36px 12px 0 0
 
     +media($small)
+      padding: 60px 12px 0 0
+    +media($small-med)
       padding: 84px 24px 0 0
 
   // Modal Content

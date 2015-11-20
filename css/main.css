@@ -651,24 +651,41 @@ nav.main-nav::after {
     float: none;
     display: block; }
   .modal header {
-    padding: 12px 0 24px; }
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    height: 160px; }
     @media screen and (min-width: 600px) {
       .modal header {
-        padding: 48px 0 60px; } }
+        height: 200px; } }
+    @media screen and (min-width: 700px) {
+      .modal header {
+        height: 228px; } }
   .modal h1.modal-title {
     font-size: 1.5em;
-    line-height: 1; }
+    line-height: 1;
+    margin: 0; }
     .modal h1.modal-title:after {
-      margin: 12px auto 24px; }
+      margin: 12px auto 0; }
     @media screen and (min-width: 600px) {
       .modal h1.modal-title {
         font-size: 1.9375em; }
         .modal h1.modal-title:after {
-          margin: 18px auto 24px; } }
+          margin: 18px auto 0; } }
   .modal .modal-header {
     background: #f0f0f0;
     padding: 36px 12px 0 0; }
     @media screen and (min-width: 600px) {
+      .modal .modal-header {
+        padding: 60px 12px 0 0; } }
+    @media screen and (min-width: 700px) {
       .modal .modal-header {
         padding: 84px 24px 0 0; } }
   .modal .modal-content {
