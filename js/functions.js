@@ -66,6 +66,7 @@ $(window).scroll(function(){
     $mainHeader.addClass('noscroll');
     $overlay.addClass('is-visible');
     $modal.addClass('is-visible');
+    $modal.focus();
     $close.addClass('is-visible');
   }
 
@@ -74,6 +75,7 @@ $(window).scroll(function(){
     $mainHeader.removeClass('noscroll');
     $overlay.removeClass('is-visible');
     $modal.removeClass('is-visible');
+    $modal.blur();
     $close.removeClass('is-visible');
     setTimeout(function() {
       $modal.scrollTop(0);
