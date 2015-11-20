@@ -646,6 +646,8 @@ nav.main-nav::after {
     left: 50%;
     z-index: 102;
     opacity: 1; }
+  .modal:focus {
+    outline: 0; }
   .modal img {
     margin: 0;
     float: none;
