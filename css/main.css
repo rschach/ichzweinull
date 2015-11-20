@@ -141,8 +141,8 @@ td, th {
 
 @font-face {
   font-family: 'icomoon';
-  src: url('/fonts/icomoon.eot?skz5u6');
-  src: url('/fonts/icomoon.eot?skz5u6#iefix') format('embedded-opentype'), url('/fonts/icomoon.ttf?skz5u6') format('truetype'), url('/fonts/icomoon.woff?skz5u6') format('woff'), url('/fonts/icomoon.svg?skz5u6#icomoon') format('svg');
+  src: url('/fonts/icomoon.eot?pai0wu');
+  src: url('/fonts/icomoon.eot?pai0wu#iefix') format('embedded-opentype'), url('/fonts/icomoon.ttf?pai0wu') format('truetype'), url('/fonts/icomoon.woff?pai0wu') format('woff'), url('/fonts/icomoon.svg?pai0wu#icomoon') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -172,6 +172,18 @@ td, th {
 
 .icon-quote:before {
   content: "\e904"; }
+
+.icon-code:before {
+  content: "\e905"; }
+
+.icon-notification:before {
+  content: "\e906"; }
+
+.icon-popup:before {
+  content: "\e907"; }
+
+.icon-shareable:before {
+  content: "\e908"; }
 
 /* Generated with Bounce.js. Edit at http://goo.gl/335BE4 */
 @-webkit-keyframes animation {
