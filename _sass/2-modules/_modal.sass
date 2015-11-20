@@ -12,11 +12,6 @@
   overflow-y: scroll
   transition: all 0.3s ease-in-out
 
-  img
-    margin: 0
-    float: none
-    display: block
-
   +media($small)
     width: $container-medium-width
     height: calc(100vh - 60px)
@@ -35,25 +30,54 @@
     z-index: 102
     opacity: 1
 
-  h1.modal-title
-    padding: 36px 0
-    &:after
-      margin: 12px auto 30px
+  img
+    margin: 0
+    float: none
+    display: block
 
+  // Modal Heading
+  header
+    padding: 12px 0 24px
+    +media($small)
+      padding: 48px 0 60px
+
+  h1.modal-title
+    font-size: 1.5em
+    line-height: 1
+    &:after
+      margin: 12px auto 24px
+
+    +media($small)
+      font-size: $h1-font-size
+      &:after
+        margin: 18px auto 24px
+
+  // Modal Image
   .modal-header
     background: $neutral
-    padding: 84px 24px 0 0
+    padding: 36px 12px 0 0
 
+    +media($small)
+      padding: 84px 24px 0 0
+
+  // Modal Content
   .modal-content
-    padding: 48px 0
-    max-width: 600px
     margin: 0 auto
     text-align: center
+    padding: 24px 0
+    max-width: 90%
+
+    +media($small-med)
+      padding: 48px 0
+      max-width: 600px
 
 // Custom Chrome Scrollbars
 
 .modal::-webkit-scrollbar
-  width: 8px
+  width: 4px
+
+  +media($medium)
+    width: 8px
 
 .modal::-webkit-scrollbar-track
   background: lighten($bg-lighter, 3%)
