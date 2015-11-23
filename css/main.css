@@ -429,8 +429,7 @@ h4 {
           align-items: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  z-index: 400; }
+          flex-wrap: wrap; }
   @media screen and (min-width: 700px) {
     .main-header {
       margin: 10px 0; } }
@@ -445,7 +444,8 @@ h4 {
           -ms-flex-wrap: nowrap;
               flex-wrap: nowrap; } }
   .main-header.is-open {
-    max-height: 500px; }
+    max-height: 500px;
+    z-index: 400; }
   .main-header.fixed {
     -webkit-align-items: center;
         -ms-flex-align: center;
