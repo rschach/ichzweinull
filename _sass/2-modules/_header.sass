@@ -55,8 +55,14 @@
 
 
 // Header Flex Elements
-.logo, .tagline, .menu-toggle
-  flex-basis: 33.33%
+.logo
+  flex-basis: 66.6%
+.menu-toggle
+  flex-basis: 33.3%
+
++media($small-med)
+  .logo, .tagline, .menu-toggle
+    flex-basis: 33.33%
 
 nav.main-nav
   flex-basis: 100%
@@ -81,6 +87,10 @@ nav.main-nav
     color: $primary
 
 .tagline
+  display: none
+  +media($small-med)
+    display: block
+
   p
     color: $neutral
     font-size: 75%
