@@ -59,10 +59,13 @@
   flex-basis: 66.6%
 .menu-toggle
   flex-basis: 33.3%
+.tagline
+  display: none
 
 +media($small-med)
   .logo, .tagline, .menu-toggle
     flex-basis: 33.33%
+    display: initial
 
 nav.main-nav
   flex-basis: 100%
@@ -87,10 +90,6 @@ nav.main-nav
     color: $primary
 
 .tagline
-  display: none
-  +media($small-med)
-    display: block
-
   p
     color: $neutral
     font-size: 75%

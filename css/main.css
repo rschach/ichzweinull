@@ -480,11 +480,15 @@ h4 {
       -ms-flex-preferred-size: 33.3%;
           flex-basis: 33.3%; }
 
+.tagline {
+  display: none; }
+
 @media screen and (min-width: 700px) {
   .logo, .tagline, .menu-toggle {
     -webkit-flex-basis: 33.33%;
         -ms-flex-preferred-size: 33.33%;
-            flex-basis: 33.33%; } }
+            flex-basis: 33.33%;
+    display: initial; } }
 
 nav.main-nav {
   -webkit-flex-basis: 100%;
@@ -509,18 +513,13 @@ nav.main-nav {
 .logo span {
   color: #a83a24; }
 
-.tagline {
-  display: none; }
-  @media screen and (min-width: 700px) {
-    .tagline {
-      display: block; } }
-  .tagline p {
-    color: #f0f0f0;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase; }
+.tagline p {
+  color: #f0f0f0;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase; }
 
 nav.main-nav ul {
   margin: 0;
