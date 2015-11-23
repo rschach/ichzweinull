@@ -382,6 +382,11 @@ a, a:visited {
 a:hover {
   color: #a83a24; }
 
+.small-bold, .tagline p, nav.main-nav ul li a, .button, .client-info .client-name {
+  font-size: 75%;
+  font-weight: 700;
+  text-transform: uppercase; }
+
 h1 {
   font-size: 1.9375em;
   line-height: 1.54839em;
@@ -424,7 +429,8 @@ h4 {
           align-items: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  z-index: 400; }
   @media screen and (min-width: 700px) {
     .main-header {
       margin: 10px 0; } }
@@ -515,11 +521,8 @@ nav.main-nav {
 
 .tagline p {
   color: #f0f0f0;
-  font-size: 75%;
-  font-weight: 700;
   line-height: 1;
-  text-align: center;
-  text-transform: uppercase; }
+  text-align: center; }
 
 nav.main-nav ul {
   margin: 0;
@@ -545,9 +548,6 @@ nav.main-nav ul {
         margin-right: 36px; } }
     nav.main-nav ul li a {
       color: #f0f0f0;
-      font-size: 75%;
-      font-weight: 700;
-      text-transform: uppercase;
       padding: 16px 0; }
       nav.main-nav ul li a:hover {
         color: #a83a24; }
@@ -808,15 +808,12 @@ nav.main-nav::after {
   border: 1px solid #f0f0f0;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   padding: 1.1em 0;
-  letter-spacing: 2px;
-  font-size: 75%;
-  font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
   margin: 36px auto;
   max-width: 200px;
   display: block;
   position: relative;
+  letter-spacing: 2px;
   transition: all 0.2s ease-in-out; }
   .button:hover {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
@@ -844,11 +841,8 @@ nav.main-nav::after {
     color: #f0f0f0; }
   .client-info .client-name {
     display: block;
-    font-size: 75%;
-    line-height: 0.25;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    letter-spacing: 1px; }
   .client-info .client-company {
     font-size: 60%;
     text-transform: uppercase; }

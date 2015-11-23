@@ -12,6 +12,7 @@
   display: flex
   align-items: center
   flex-wrap: wrap
+  z-index: 400
 
   +media($small-med)
     margin: 10px 0
@@ -92,9 +93,6 @@ nav.main-nav
 .tagline
   p
     color: $neutral
-    font-size: 75%
-    font-weight: 700
     line-height: 1
-
     text-align: center
-    text-transform: uppercase
+    @extend .small-bold
