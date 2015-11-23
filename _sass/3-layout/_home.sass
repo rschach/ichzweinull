@@ -3,15 +3,35 @@
   position: relative
   margin: 0
   display: flex
-  flex-direction: column
-  align-items: baseline
+  min-height: 72.5vh
+
+  +media($small)
+    min-height: 70vh
+  +media($nav-collapse)
+    min-height: 90vh
+  +media($large)
+    min-height: 82.5vh
+
 
   .container
-    max-width: 460px
-    margin: 21vh auto 0
+    max-width: 280px
+    margin: 20vh auto 0
+
+    h1
+      font-size: 1.4em
+
+    +media($xsmall)
+      max-width: 325px
+
+    +media($small)
+      max-width: 460px
+      margin: 21vh auto 0
+
+      h1
+        font-size: $h1-font-size
 
     +media($nav-collapse)
-      margin-top: 28vh
+      margin: 28vh auto 0
 
     p
       text-align: center
