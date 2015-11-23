@@ -842,6 +842,7 @@ nav.main-nav::after {
   .client-info .client-name {
     display: block;
     margin-top: 10px;
+    line-height: 0.25;
     letter-spacing: 1px; }
   .client-info .client-company {
     font-size: 60%;
@@ -1034,20 +1035,23 @@ figure {
 
 .about {
   background: #22303a;
-  min-height: auto;
-  padding: 40px 0 0; }
-
-.about-temp {
-  margin: 0 auto 120px;
-  max-width: 500px; }
-  .about-temp p {
-    text-align: left; }
-
-header {
   padding: 60px 0 0; }
+  .about header {
+    text-align: center; }
+    .about header img {
+      max-width: 74px; }
+    .about header h1 {
+      margin: 0.35em 0 0.75em; }
+      .about header h1::after {
+        margin: 20px auto 0; }
+  .about article {
+    max-width: 460px;
+    margin: 0 auto 120px; }
 
 .contact {
   background: #22303a; }
+  .contact header {
+    padding: 60px 0 0; }
 
 .contact-form {
   max-width: 500px;
