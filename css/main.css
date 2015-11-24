@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1:after {
   content: '';
-  width: 160px;
+  width: 140px;
   height: 4px;
   display: block;
   margin: 24px auto;
@@ -1035,20 +1035,24 @@ figure {
 
 .about {
   background: #22303a;
-  padding: 60px 0 0; }
+  padding: 0; }
   .about header {
     text-align: center;
-    max-width: 460px;
     margin: 0 auto; }
+    .about header .container {
+      padding: 60px 0 0;
+      margin: 0 auto;
+      max-width: 460px; }
     .about header img {
-      max-width: 84px; }
+      max-width: 90px; }
     .about header h1 {
-      margin: 0.35em 0 0.75em; }
-      .about header h1::after {
-        margin: 20px auto 32px; }
+      margin: 0.85em 0 0; }
+      .about header h1:after {
+        margin: 20px auto 0; }
   .about article {
-    max-width: 460px;
-    margin: 0 auto 160px; }
+    max-width: 620px;
+    margin: 0 auto 160px;
+    padding-top: 24px; }
 
 .contact {
   background: #22303a; }
