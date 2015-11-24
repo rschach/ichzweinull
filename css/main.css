@@ -357,6 +357,30 @@ img {
   max-width: 100%;
   height: auto; }
 
+h1 {
+  font-size: 1.9375em;
+  line-height: 1.54839em;
+  margin-top: 1.54839em;
+  margin-bottom: 0.77419em; }
+
+h2 {
+  font-size: 1.5625em;
+  line-height: 1.92em;
+  margin-top: 1.92em;
+  margin-bottom: 0.96em; }
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em; }
+
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Neue Haas Unica W01', 'Nimbus Sans L', Helvetica, Arial, sans-serif;
   text-align: center;
@@ -387,29 +411,10 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase; }
 
-h1 {
-  font-size: 1.9375em;
-  line-height: 1.54839em;
-  margin-top: 1.54839em;
-  margin-bottom: 0.77419em; }
-
-h2 {
-  font-size: 1.5625em;
-  line-height: 1.92em;
-  margin-top: 1.92em;
-  margin-bottom: 0.96em; }
-
-h3 {
+.thin-large, .client-text p {
   font-size: 1.25em;
-  line-height: 1.2em;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em; }
-
-h4 {
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em; }
+  font-weight: 300;
+  line-height: 1.825; }
 
 .main-header {
   background: #22303a;
@@ -707,13 +712,12 @@ nav.main-nav::after {
         padding: 84px 24px 0 0; } }
   .modal .modal-content {
     margin: 0 auto;
-    text-align: center;
-    padding: 24px 0;
+    padding: 24px 0 48px;
     max-width: 90%; }
     @media screen and (min-width: 700px) {
       .modal .modal-content {
-        padding: 48px 0;
-        max-width: 600px; } }
+        padding: 42px 0 84px;
+        max-width: 620px; } }
 
 .modal::-webkit-scrollbar {
   width: 4px; }
@@ -850,9 +854,6 @@ nav.main-nav::after {
 
 .client-text p {
   text-align: left;
-  font-size: 1.25em;
-  font-weight: 300;
-  line-height: 1.825;
   margin-top: 1em;
   position: relative; }
   .client-text p:before, .client-text p:after {
