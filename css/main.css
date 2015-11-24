@@ -1086,7 +1086,9 @@ figure {
     padding: 8px;
     margin-bottom: 8px; }
   .contact-form textarea {
-    height: 120px; }
+    display: block;
+    height: 120px;
+    margin-bottom: 16px; }
   .contact-form input[type="submit"] {
     background: #a83a24;
     padding: 16px 0;
@@ -1100,24 +1102,28 @@ figure {
     .contact-form input[type="submit"]:hover {
       background: #bd3f29; }
   .contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
-    color: #a3a3a3;
-    font-size: 80%;
-    line-height: 1.8;
+    color: #f0f0f0;
+    font-size: 70%;
+    font-weight: 300;
+    line-height: 2.25;
     text-transform: uppercase; }
   .contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
     color: #a3a3a3;
-    font-size: 80%;
+    font-size: 75%;
+    font-weight: 400;
     line-height: 1.8;
     text-transform: uppercase;
     opacity: 1; }
   .contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {
     color: #a3a3a3;
-    font-size: 80%;
+    font-size: 75%;
+    font-weight: 400;
     line-height: 1.8;
     text-transform: uppercase; }
   .contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder {
     color: #a3a3a3;
-    font-size: 80%;
+    font-size: 75%;
+    font-weight: 400;
     line-height: 1.8;
     text-transform: uppercase;
     opacity: 1; }

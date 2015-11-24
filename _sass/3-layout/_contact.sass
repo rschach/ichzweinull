@@ -38,7 +38,9 @@
     margin-bottom: 8px
 
   textarea
+    display: block
     height: 120px
+    margin-bottom: 16px
 
   input[type="submit"]
     background: $primary
@@ -55,24 +57,28 @@
       background: lighten($primary, 5%)
 
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
-    color: darken($neutral, 30%)
-    font-size: 80%
-    line-height: 1.8
+    color: $neutral
+    font-size: 70%
+    font-weight: 300
+    line-height: 2.25
     text-transform: uppercase
   input::-moz-placeholder, textarea::-moz-placeholder
     color: darken($neutral, 30%)
-    font-size: 80%
+    font-size: 75%
+    font-weight: 400
     line-height: 1.8
     text-transform: uppercase
     opacity: 1
   input:-ms-input-placeholder, textarea:-ms-input-placeholder
     color: darken($neutral, 30%)
-    font-size: 80%
+    font-size: 75%
+    font-weight: 400
     line-height: 1.8
     text-transform: uppercase
   input:-moz-placeholder, textarea:-moz-placeholder
     color: darken($neutral, 30%)
-    font-size: 80%
+    font-size: 75%
+    font-weight: 400
     line-height: 1.8
     text-transform: uppercase
     opacity: 1
