@@ -381,10 +381,13 @@ h4 {
   margin-top: 1.5em;
   margin-bottom: 1.5em; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
   font-family: 'Neue Haas Unica W01', 'Nimbus Sans L', Helvetica, Arial, sans-serif;
   text-align: center;
   font-weight: 300; }
+
+h4 {
+  font-size: 1em; }
 
 h1:after {
   content: '';
@@ -406,7 +409,7 @@ a, a:visited {
 a:hover {
   color: #a83a24; }
 
-.small-bold, .tagline p, nav.main-nav ul li a, .button, .client-info .client-name, .contact header p {
+.small-bold, h4, .tagline p, nav.main-nav ul li a, .button, .client-info .client-name, .contact header p {
   font-size: 75%;
   font-weight: 700;
   text-transform: uppercase; }
