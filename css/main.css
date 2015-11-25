@@ -409,7 +409,7 @@ a, a:visited {
 a:hover {
   color: #a83a24; }
 
-.small-bold, h4, .tagline p, nav.main-nav ul li a, .button, .client-info .client-name, .contact header p {
+.small-bold, h4, .tagline p, nav.main-nav ul li a, .button, .client-info .client-name {
   font-size: 75%;
   font-weight: 700;
   text-transform: uppercase; }
@@ -1048,7 +1048,7 @@ figure {
       margin: 0 auto;
       max-width: 460px; }
     .about header img {
-      max-width: 90px; }
+      max-width: 100px; }
     .about header h1 {
       margin: 0.85em 0 0; }
       .about header h1:after {
@@ -1061,15 +1061,17 @@ figure {
 .contact {
   background: #22303a; }
   .contact header {
-    padding: 40px 0 0;
+    padding: 24px 0 0;
     text-align: center; }
     .contact header h1 {
-      margin-bottom: 1em; }
+      margin-bottom: 1.25em; }
       .contact header h1::after {
-        margin: 24px auto 0; }
+        margin: 20px auto 0; }
     .contact header p {
       margin: 0 auto;
-      letter-spacing: 1px; }
+      font-size: 1.225em;
+      font-weight: 300;
+      letter-spacing: 2px; }
     .contact header a {
       color: #f0f0f0; }
       .contact header a:hover {
@@ -1078,7 +1080,7 @@ figure {
 .contact-form {
   max-width: 460px;
   margin: 0 auto;
-  padding: 40px 0 0; }
+  padding: 36px 0 0; }
   .contact-form input, .contact-form textarea {
     width: 100%;
     border: 0;
