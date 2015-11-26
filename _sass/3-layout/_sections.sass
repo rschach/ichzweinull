@@ -17,6 +17,7 @@ div.sections
 section
   min-height: 72.5vh
 
+// Section Headings Container
 .container
   margin: 0 auto
   max-width: $container-small-width
@@ -26,3 +27,11 @@ section
 
   +media($small)
     max-width: $container-large-width
+
+// Section Content container
+.content-container
+  margin: 0 auto
+  max-width: $content-initial-width
+
+  +media($small-med)
+    max-width: $content-max-width

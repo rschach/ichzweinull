@@ -965,6 +965,13 @@ section {
     .container {
       max-width: 460px; } }
 
+.content-container {
+  margin: 0 auto;
+  max-width: 90%; }
+  @media screen and (min-width: 700px) {
+    .content-container {
+      max-width: 620px; } }
+
 .home {
   background: #22303a;
   position: relative;
