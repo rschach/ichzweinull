@@ -4,9 +4,7 @@
   position: relative
 
   .client
-    max-width: 620px
     position: relative
-    margin: 0 auto
     display: none
     animation: animation 750ms linear both
 
@@ -36,33 +34,54 @@
 
 .client-text
   p
-    text-align: left
     margin-top: 1em
     position: relative
-    @extend .thin-large
+    font-weight: 300
+    line-height: 1.825
+    font-size: 1.05825em
+    text-align: center
+
+    +media($nav-collapse)
+      font-size: $h3-font-size
+      text-align: left
 
     &:before, &:after
       content: '\e904'
       font-family: icomoon
       display: inline
       position: absolute
-      font-size: 1.825em
       padding: 0
       line-height: 1
       color: $primary
+      font-size: 1.625em
 
     &:before
-      margin: -6px 0 0 -44px
       transform: rotate(180deg)
+      margin: -0 0 0 -30px
+      +media($nav-collapse)
+        margin: -1px 0 0 -36px
 
     &:after
-      margin: 6px 0 0 10px
+      margin: 5px 0 0 5px
+      +media($nav-collapse)
+        margin: 5px 0 0 5px
 
 // Client Counter
 .client-counter
   max-width: 100%
-  margin: 48px auto 0
   text-align: center
+  margin: 0
+  position: absolute
+  left: 50%
+  bottom: 14.25%
+  transform: translateX(-50%)
+
+  +media($nav-collapse)
+    margin: 48px auto 0
+    position: relative
+    left: auto
+    bottom: auto
+    transform: none
 
   > div
     width: 10px
@@ -88,26 +107,36 @@
   cursor: pointer
   font-size: 2.25em
   position: absolute
-  top: 50%
-  transform: translateY(-50%)
+  bottom: 12.25%
+  width: 50%
   transition: all .2s ease-in-out
   display: flex
   align-items: center
   justify-content: center
+  -webkit-tap-highlight-color: transparent
+
+  +media($nav-collapse)
+    top: 50%
+    transform: translateY(-50%)
+    width: auto
 
   &:hover
     color: $primary
 
-
 .client-prev
-  left: 40px
   &:before
     content: "\e902"
     font-family: icomoon
 
+  left: 0
+  +media($nav-collapse)
+    left: 40px
 
 .client-next
-  right: 40px
   &:before
     content: "\e903"
     font-family: icomoon
+
+  right: 0
+  +media($nav-collapse)
+    right: 40px

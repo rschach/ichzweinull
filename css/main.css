@@ -358,7 +358,7 @@ img {
   height: auto; }
 
 h1 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 1.54839em;
   margin-top: 1.54839em;
   margin-bottom: 0.77419em; }
@@ -420,7 +420,7 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase; }
 
-.thin-large, .client-text p {
+.thin-large {
   font-size: 1.25em;
   font-weight: 300;
   line-height: 1.825; }
@@ -837,9 +837,7 @@ nav.main-nav::after {
   padding: 80px 0 120px;
   position: relative; }
   .clients-wrap .client {
-    max-width: 620px;
     position: relative;
-    margin: 0 auto;
     display: none;
     -webkit-animation: animation 750ms linear both;
             animation: animation 750ms linear both; }
@@ -862,30 +860,58 @@ nav.main-nav::after {
     text-transform: uppercase; }
 
 .client-text p {
-  text-align: left;
   margin-top: 1em;
-  position: relative; }
+  position: relative;
+  font-weight: 300;
+  line-height: 1.825;
+  font-size: 1.05825em;
+  text-align: center; }
+  @media screen and (min-width: 1000px) {
+    .client-text p {
+      font-size: 1.25em;
+      text-align: left; } }
   .client-text p:before, .client-text p:after {
     content: '\e904';
     font-family: icomoon;
     display: inline;
     position: absolute;
-    font-size: 1.825em;
     padding: 0;
     line-height: 1;
-    color: #a83a24; }
+    color: #a83a24;
+    font-size: 1.625em; }
   .client-text p:before {
-    margin: -6px 0 0 -44px;
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
-            transform: rotate(180deg); }
+            transform: rotate(180deg);
+    margin: -0 0 0 -30px; }
+    @media screen and (min-width: 1000px) {
+      .client-text p:before {
+        margin: -1px 0 0 -36px; } }
   .client-text p:after {
-    margin: 6px 0 0 10px; }
+    margin: 5px 0 0 5px; }
+    @media screen and (min-width: 1000px) {
+      .client-text p:after {
+        margin: 5px 0 0 5px; } }
 
 .client-counter {
   max-width: 100%;
-  margin: 48px auto 0;
-  text-align: center; }
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 14.25%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+  @media screen and (min-width: 1000px) {
+    .client-counter {
+      margin: 48px auto 0;
+      position: relative;
+      left: auto;
+      bottom: auto;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; } }
   .client-counter > div {
     width: 10px;
     height: 10px;
@@ -907,10 +933,8 @@ nav.main-nav::after {
   cursor: pointer;
   font-size: 2.25em;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  bottom: 12.25%;
+  width: 50%;
   transition: all 0.2s ease-in-out;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -920,21 +944,35 @@ nav.main-nav::after {
           align-items: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-tap-highlight-color: transparent; }
+  @media screen and (min-width: 1000px) {
+    .client-prev, .client-next {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: auto; } }
   .client-prev:hover, .client-next:hover {
     color: #a83a24; }
 
 .client-prev {
-  left: 40px; }
+  left: 0; }
   .client-prev:before {
     content: "\e902";
     font-family: icomoon; }
+  @media screen and (min-width: 1000px) {
+    .client-prev {
+      left: 40px; } }
 
 .client-next {
-  right: 40px; }
+  right: 0; }
   .client-next:before {
     content: "\e903";
     font-family: icomoon; }
+  @media screen and (min-width: 1000px) {
+    .client-next {
+      right: 40px; } }
 
 div.sections {
   padding: 0;
@@ -957,7 +995,7 @@ section {
 
 .container {
   margin: 0 auto;
-  max-width: 300px; }
+  max-width: 290px; }
   @media screen and (min-width: 360px) {
     .container {
       max-width: 325px; } }
@@ -1066,12 +1104,8 @@ figure {
       .about header h1:after {
         margin: 20px auto 0; }
   .about article {
-    max-width: 90%;
     margin: 0 auto 120px;
     padding-top: 24px; }
-    @media screen and (min-width: 700px) {
-      .about article {
-        max-width: 620px; } }
 
 .contact {
   background: #22303a; }
