@@ -1044,19 +1044,29 @@ figure {
     text-align: center;
     margin: 0 auto; }
     .about header .container {
-      padding: 60px 0 0;
+      padding: 80px 0 0;
       margin: 0 auto;
-      max-width: 460px; }
+      max-width: 280px; }
+      @media screen and (min-width: 600px) {
+        .about header .container {
+          max-width: 460px; } }
     .about header img {
       max-width: 100px; }
     .about header h1 {
-      margin: 0.85em 0 0; }
+      margin: 0.85em 0 0;
+      font-size: 1.25em; }
+      @media screen and (min-width: 600px) {
+        .about header h1 {
+          font-size: 1.9375em; } }
       .about header h1:after {
         margin: 20px auto 0; }
   .about article {
-    max-width: 620px;
+    max-width: 90%;
     margin: 0 auto 120px;
     padding-top: 24px; }
+    @media screen and (min-width: 700px) {
+      .about article {
+        max-width: 620px; } }
 
 .contact {
   background: #22303a; }
@@ -1088,7 +1098,7 @@ figure {
   .contact-form input, .contact-form textarea {
     background: #1e2932;
     border: 1px solid #273642;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2) inset;
     padding: 8px 12px;
     margin-bottom: 8px; }
     .contact-form input:focus, .contact-form textarea:focus {
@@ -1096,7 +1106,7 @@ figure {
   .contact-form textarea {
     display: block;
     height: 120px;
-    margin-bottom: 16px; }
+    margin-bottom: 24px; }
   .contact-form input[type="submit"] {
     background: #a83a24;
     padding: 16px 0;

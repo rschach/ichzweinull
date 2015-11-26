@@ -7,20 +7,30 @@
     margin: 0 auto
 
     .container
-      padding: 60px 0 0
+      padding: 80px 0 0
       margin: 0 auto
-      max-width: 460px
+      max-width: 280px
+
+      +media($small)
+        max-width: 460px
 
     img
       max-width: 100px
 
     h1
       margin: 0.85em 0 0
+      font-size: 1.25em
+
+      +media($small)
+        font-size: $h1-font-size
 
       &:after
         margin: 20px auto 0
 
   article
-    max-width: 620px
+    max-width: 90%
     margin: 0 auto 120px
     padding-top: 24px
+
+    +media($small-med)
+      max-width: 620px
