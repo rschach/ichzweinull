@@ -16,3 +16,13 @@ div.sections
 
 section
   min-height: 72.5vh
+
+.container
+  margin: 0 auto
+  max-width: $container-small-width
+
+  +media($xsmall)
+    max-width: $container-medium-width
+
+  +media($small)
+    max-width: $container-large-width

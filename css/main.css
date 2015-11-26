@@ -955,6 +955,16 @@ div.sections {
 section {
   min-height: 72.5vh; }
 
+.container {
+  margin: 0 auto;
+  max-width: 300px; }
+  @media screen and (min-width: 360px) {
+    .container {
+      max-width: 325px; } }
+  @media screen and (min-width: 600px) {
+    .container {
+      max-width: 460px; } }
+
 .home {
   background: #22303a;
   position: relative;
@@ -973,14 +983,9 @@ section {
     .home {
       min-height: 82.5vh; } }
   .home .container {
-    max-width: 280px;
     margin: 20vh auto 0; }
-    @media screen and (min-width: 360px) {
-      .home .container {
-        max-width: 325px; } }
     @media screen and (min-width: 600px) {
       .home .container {
-        max-width: 460px;
         margin: 21vh auto 0; } }
     @media screen and (min-width: 1000px) {
       .home .container {
@@ -1046,15 +1051,7 @@ figure {
     text-align: center;
     margin: 0 auto; }
     .about header .container {
-      padding: 80px 0 0;
-      margin: 0 auto;
-      max-width: 280px; }
-      @media screen and (min-width: 360px) {
-        .about header .container {
-          max-width: 325px; } }
-      @media screen and (min-width: 600px) {
-        .about header .container {
-          max-width: 460px; } }
+      padding: 80px 0 0; }
     .about header img {
       max-width: 100px; }
     .about header h1 {
@@ -1072,8 +1069,7 @@ figure {
 .contact {
   background: #22303a; }
   .contact header {
-    padding: 24px 0 0;
-    text-align: center; }
+    padding: 24px 0 0; }
     .contact header h1 {
       margin-bottom: 1.25em; }
       .contact header h1::after {
@@ -1082,7 +1078,8 @@ figure {
       margin: 0 auto;
       font-size: 1.225em;
       font-weight: 300;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      text-align: center; }
     .contact header a {
       color: #f0f0f0; }
       .contact header a:hover {
