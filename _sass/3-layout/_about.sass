@@ -11,6 +11,9 @@
       margin: 0 auto
       max-width: 280px
 
+      +media($xsmall)
+        max-width: 325px
+
       +media($small)
         max-width: 460px
 
@@ -19,10 +22,6 @@
 
     h1
       margin: 0.85em 0 0
-      font-size: 1.25em
-
-      +media($small)
-        font-size: $h1-font-size
 
       &:after
         margin: 20px auto 0
