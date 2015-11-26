@@ -17,16 +17,16 @@ figure
   figcaption
     color: $text-color
     background: transparentize($primary, 0.05)
-    padding: 24px
+    padding: 24px 0
     display: flex
     align-items: center
 
-    .container
-      max-width: 90%
+    .projects-container
+      max-width: $project-initital-width
       margin: 0 auto
 
       +media($nav-collapse)
-        max-width: 300px
+        max-width: $project-max-width
 
       h2, h3
         margin-top: 0

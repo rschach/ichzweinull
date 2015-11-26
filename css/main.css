@@ -1004,22 +1004,22 @@ figure {
   figure figcaption {
     color: #f0f0f0;
     background: rgba(168, 58, 36, 0.95);
-    padding: 24px;
+    padding: 24px 0;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    figure figcaption .container {
+    figure figcaption .projects-container {
       max-width: 90%;
       margin: 0 auto; }
       @media screen and (min-width: 1000px) {
-        figure figcaption .container {
+        figure figcaption .projects-container {
           max-width: 300px; } }
-      figure figcaption .container h2, figure figcaption .container h3 {
+      figure figcaption .projects-container h2, figure figcaption .projects-container h3 {
         margin-top: 0; }
-      figure figcaption .container p {
+      figure figcaption .projects-container p {
         text-align: center; }
     @media screen and (min-width: 1000px) {
       figure figcaption {
