@@ -16,9 +16,12 @@ h1:after
 	 background: $primary
 
 p
-  font-size: $base-font-size
-  line-height: $base-line-height
+  font-size: 85%
+  line-height: 1.625em
   margin: 1.5em 0
+  +media($small)
+    font-size: $base-font-size
+    line-height: $base-line-height
 
 a, a:visited
   color: $link-color
