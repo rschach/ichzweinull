@@ -413,7 +413,7 @@ h1:after, h2:after {
   width: 140px;
   height: 4px;
   display: block;
-  margin: 24px auto;
+  margin: 24px auto 0;
   background: #a83a24; }
 
 h2:after {
@@ -1131,8 +1131,6 @@ figure {
       max-width: 100px; }
     .about header h1 {
       margin: 0.85em 0 0; }
-      .about header h1:after {
-        margin: 20px auto 0; }
   .about article {
     margin: 0 auto 120px;
     padding-top: 24px; }
@@ -1143,8 +1141,6 @@ figure {
     padding: 24px 0 0; }
     .contact header h1 {
       margin-bottom: 1.25em; }
-      .contact header h1::after {
-        margin: 20px auto 0; }
     .contact header p {
       margin: 0 auto;
       font-size: 1.225em;
