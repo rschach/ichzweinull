@@ -887,7 +887,11 @@ nav.main-nav::after {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
-    margin: -0 0 0 -28px; }
+    margin: -0 0 0 -28px;
+    display: none; }
+    @media screen and (min-width: 600px) {
+      .client-text p:before {
+        display: initial; } }
     @media screen and (min-width: 1000px) {
       .client-text p:before {
         margin: -1px 0 0 -36px; } }

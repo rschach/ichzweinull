@@ -58,6 +58,9 @@
     &:before
       transform: rotate(180deg)
       margin: -0 0 0 -28px
+      display: none
+      +media($small)
+        display: initial
       +media($nav-collapse)
         margin: -1px 0 0 -36px
 
