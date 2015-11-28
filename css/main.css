@@ -858,6 +858,22 @@ nav.main-nav::after {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     top: -1px; }
 
+.icons {
+  background: #1e2932; }
+  .icons-container {
+    margin: 0 auto;
+    max-width: calc(100% - 80px);
+    padding: 84px 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .icons span {
+    color: #3f576a;
+    font-size: 1.825em; }
+
 .clients-wrap {
   background: #286167;
   padding: 80px 0 120px;
