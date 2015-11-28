@@ -862,7 +862,7 @@ nav.main-nav::after {
   background: #1e2932; }
   .icons-container {
     margin: 0 auto;
-    max-width: calc(100% - 80px);
+    max-width: 620px;
     padding: 84px 0;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -872,7 +872,7 @@ nav.main-nav::after {
             justify-content: space-between; }
   .icons span {
     color: #3f576a;
-    font-size: 1.825em; }
+    font-size: 2em; }
 
 .clients-wrap {
   background: #286167;
@@ -1154,7 +1154,7 @@ figure {
 .contact {
   background: #22303a; }
   .contact header {
-    padding: 24px 0 0; }
+    padding: 48px 0 0; }
     .contact header h1 {
       margin-bottom: 1.25em; }
     .contact header p {
