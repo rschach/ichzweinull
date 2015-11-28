@@ -3,17 +3,21 @@ h1, h2, h3, h4
   text-align: center
   font-weight: 300
 
-h4
-  @extend .small-bold
-  font-size: 1em
-
-h1:after
+h1:after, h2:after
 	 content: ''
 	 width: 140px
 	 height: 4px
 	 display: block
 	 margin: 24px auto
 	 background: $primary
+
+h2:after
+  margin: 12px auto
+  background: $neutral
+
+h4
+  @extend .small-bold
+  font-size: 1em
 
 p
   font-size: 85%

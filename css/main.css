@@ -392,16 +392,20 @@ h1, h2, h3, h4 {
   text-align: center;
   font-weight: 300; }
 
-h4 {
-  font-size: 1em; }
-
-h1:after {
+h1:after, h2:after {
   content: '';
   width: 140px;
   height: 4px;
   display: block;
   margin: 24px auto;
   background: #a83a24; }
+
+h2:after {
+  margin: 12px auto;
+  background: #f0f0f0; }
+
+h4 {
+  font-size: 1em; }
 
 p {
   font-size: 85%;
@@ -482,6 +486,8 @@ a:hover {
     max-width: 100%; }
     .main-header.fixed .logo h2 {
       font-size: 1.25em; }
+      .main-header.fixed .logo h2:after {
+        display: none; }
     @media screen and (min-width: 700px) {
       .main-header.fixed {
         max-width: calc(100% - 40px); } }
@@ -713,7 +719,7 @@ nav.main-nav::after {
       .modal h1.modal-title {
         font-size: 1.9375em; }
         .modal h1.modal-title:after {
-          margin: 18px auto 0; } }
+          margin: 24px auto 0; } }
   .modal .modal-header {
     background: #f0f0f0;
     padding: 36px 12px 0 0; }
