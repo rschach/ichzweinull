@@ -859,11 +859,11 @@ nav.main-nav::after {
     top: -1px; }
 
 .icons {
-  background: #1e2932; }
+  background: #22303a; }
   .icons-container {
     margin: 0 auto;
-    max-width: 620px;
-    padding: 84px 0;
+    max-width: 72.5%;
+    padding: 84px 0 24px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
