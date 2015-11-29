@@ -2,9 +2,13 @@ footer
   background: darken($bg-lighter, 2.5%)
   min-height: 240px
   padding: 60px 20px
+  text-align: center
   display: flex
   justify-content: space-between
   flex-wrap: wrap
+
+  +media($nav-collapse)
+    text-align: left
 
   +media($big)
     padding: 60px 40px
@@ -42,7 +46,8 @@ footer
   h4
     color: darken($neutral, 50%)
     margin-bottom: 1em
-    text-align: left
+    +media($nav-collapse)
+      text-align: left
 
   p
     color: darken($neutral, 50%)
