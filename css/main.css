@@ -502,8 +502,6 @@ a:hover {
     max-width: 100%; }
     .main-header.fixed .logo h2 {
       font-size: 1.25em; }
-      .main-header.fixed .logo h2:after {
-        display: none; }
     @media screen and (min-width: 700px) {
       .main-header.fixed {
         max-width: calc(100% - 40px); } }
@@ -556,6 +554,8 @@ nav.main-nav {
   line-height: 1;
   letter-spacing: -1px;
   text-align: left; }
+  .logo h2:after {
+    display: none; }
 .logo span {
   color: #a83a24; }
 
@@ -1159,10 +1159,13 @@ figure {
       margin-bottom: 1.25em; }
     .contact header p {
       margin: 0 auto;
-      font-size: 1.225em;
+      font-size: 1.025em;
       font-weight: 300;
       letter-spacing: 2px;
       text-align: center; }
+      @media screen and (min-width: 600px) {
+        .contact header p {
+          font-size: 1.225em; } }
     .contact header a {
       color: #f0f0f0; }
       .contact header a:hover {

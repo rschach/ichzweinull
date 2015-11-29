@@ -41,8 +41,6 @@
 
     .logo h2
       font-size: 1.25em
-      &:after
-        display: none
 
     +media($small-med)
       max-width: $sections-medium-width
@@ -88,6 +86,9 @@ nav.main-nav
     line-height: 1
     letter-spacing: -1px
     text-align: left
+
+    &:after
+      display: none
 
   span
     color: $primary
