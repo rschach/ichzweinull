@@ -876,7 +876,7 @@ nav.main-nav::after {
 
 .clients-wrap {
   background: #286167;
-  padding: 80px 0 120px;
+  padding: 84px 0 120px;
   position: relative; }
   .clients-wrap .client {
     position: relative;
@@ -1142,21 +1142,21 @@ figure {
     text-align: center;
     margin: 0 auto; }
     .about header .container {
-      padding: 80px 0 0; }
+      padding: 84px 0 0; }
     .about header img {
       max-width: 100px; }
     .about header h1 {
       margin: 0.85em 0 0; }
   .about article {
-    margin: 0 auto 120px;
-    padding-top: 24px; }
+    margin: 0 auto 136px;
+    padding-top: 12px; }
 
 .contact {
   background: #22303a; }
   .contact header {
     padding: 48px 0 0; }
     .contact header h1 {
-      margin-bottom: 1.25em; }
+      margin-bottom: 1.025em; }
     .contact header p {
       margin: 0 auto;
       font-size: 1.025em;
@@ -1190,7 +1190,7 @@ figure {
   .contact-form textarea {
     display: block;
     height: 120px;
-    margin-bottom: 24px; }
+    margin-bottom: 20px; }
   .contact-form input[type="submit"] {
     background: #a83a24;
     padding: 16px 0;
