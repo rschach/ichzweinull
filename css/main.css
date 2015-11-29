@@ -1294,4 +1294,5 @@ footer {
   footer p {
     color: #707070;
     margin-top: 0;
-    font-size: 85%; }
+    font-size: 85%;
+    line-height: 1.625; }
