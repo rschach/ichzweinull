@@ -858,21 +858,19 @@ nav.main-nav::after {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     top: -1px; }
 
-.icons {
-  background: #22303a; }
-  .icons-container {
-    margin: 0 auto;
-    max-width: 72.5%;
-    padding: 84px 0 24px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .icons span {
-    color: #3f576a;
-    font-size: 2em; }
+.icons-container {
+  margin: 0 auto;
+  max-width: 72.5%;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+.icons span {
+  color: #707070;
+  font-size: 2em; }
 
 .clients-wrap {
   background: #286167;
@@ -1152,24 +1150,23 @@ figure {
     padding-top: 12px; }
 
 .contact {
-  background: #22303a; }
-  .contact header {
-    padding: 48px 0 0; }
-    .contact header h1 {
-      margin-bottom: 1.025em; }
-    .contact header p {
-      margin: 0 auto;
-      font-size: 1.025em;
-      font-weight: 300;
-      letter-spacing: 2px;
-      text-align: center; }
-      @media screen and (min-width: 600px) {
-        .contact header p {
-          font-size: 1.225em; } }
-    .contact header a {
-      color: #f0f0f0; }
-      .contact header a:hover {
-        color: #a83a24; }
+  background: #22303a;
+  padding: 48px 0 180px; }
+  .contact header h1 {
+    margin-bottom: 1.025em; }
+  .contact header p {
+    margin: 0 auto;
+    font-size: 1.025em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center; }
+    @media screen and (min-width: 600px) {
+      .contact header p {
+        font-size: 1.225em; } }
+  .contact header a {
+    color: #f0f0f0; }
+    .contact header a:hover {
+      color: #a83a24; }
 
 .contact-form {
   max-width: 460px;
@@ -1235,5 +1232,41 @@ figure {
     opacity: 1; }
 
 footer {
-  background: #22303a;
-  min-height: 400px; }
+  background: #1e2932;
+  min-height: 240px;
+  padding: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  footer > div {
+    -webkit-flex-basis: calc(100% / 3 - 96px);
+        -ms-flex-preferred-size: calc(100% / 3 - 96px);
+            flex-basis: calc(100% / 3 - 96px); }
+    footer > div p.address {
+      width: 50%;
+      float: left; }
+  footer .icon-github_badge {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 2em;
+    color: #707070;
+    transition: all 0.3s ease-in-out; }
+    footer .icon-github_badge:hover {
+      color: #286167; }
+  footer h4 {
+    color: #707070;
+    margin-bottom: 1em;
+    text-align: left; }
+  footer p {
+    color: #707070;
+    margin-top: 0;
+    font-size: 85%; }
