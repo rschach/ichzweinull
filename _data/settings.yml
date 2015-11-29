@@ -6,7 +6,7 @@ menu:
 
 projects:
 - {title: Personal Excellence, image: personal-excellence.jpg, folder: 'project-1', header: 'project-1', text: 'Umfangreiches responsives Webdesign für eine Berliner Personalberatung mit integrierter Stellenbörse.'}
-- {title: Louis Busman, image: louis-busman.jpg, folder: 'project-2', header: 'project-2', text: 'Leichte Texturen schaffen einen dezenten Rahmen für die Werke des Künstlers und Malers Louis Busman.'}
+- {title: Louis Busman, image: louis-busman.jpg, folder: 'project-2', header: 'project-2', text: 'Leichte Texturen schaffen einen dezenten Rahmen für die Werke des Künstlers Louis Busman.'}
 - {title: Kleine Nachtrevue, image: kleine-nachtrevue.jpg, folder: 'project-3', header: 'project-3', text: 'Ein erfolgreiches frisches Branding und responsives Webdesign für das Berliner Burlesque-Theater.'}
 
 clients:
