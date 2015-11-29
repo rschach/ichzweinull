@@ -26,16 +26,18 @@ footer
     +media($huge)
       flex-basis: calc(100% / 3 - 96px)
 
+    &:last-of-type
+      flex-basis: 100%
+      text-align: center
+      margin: 24px 0 12px
+
   .icon-github_badge
-    flex-basis: 100%
-    text-align: center
-    margin: 24px 0 12px
     font-size: 2em
     color: darken($neutral, 50%)
     transition: all .3s ease-in-out
 
     &:hover
-      color: $secondary
+      color: darken($neutral, 25%)
 
   h4
     color: darken($neutral, 50%)

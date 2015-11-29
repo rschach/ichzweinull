@@ -1268,17 +1268,18 @@ footer {
         -webkit-flex-basis: calc(100% / 3 - 96px);
             -ms-flex-preferred-size: calc(100% / 3 - 96px);
                 flex-basis: calc(100% / 3 - 96px); } }
+    footer > div:last-of-type {
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
+      text-align: center;
+      margin: 24px 0 12px; }
   footer .icon-github_badge {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-    text-align: center;
-    margin: 24px 0 12px;
     font-size: 2em;
     color: #707070;
     transition: all 0.3s ease-in-out; }
     footer .icon-github_badge:hover {
-      color: #286167; }
+      color: #b0b0b0; }
   footer h4 {
     color: #707070;
     margin-bottom: 1em;
