@@ -1,22 +1,35 @@
 footer
   background: darken($bg-lighter, 2.5%)
   min-height: 240px
-  padding: 60px
+  padding: 60px 20px
   display: flex
   justify-content: space-between
   flex-wrap: wrap
 
-  > div
-    flex-basis: calc(100% / 3 - 96px)
+  +media($big)
+    padding: 60px 40px
 
-    p.address
-      width: 50%
-      float: left
+  +media($huge)
+    padding: 60px
+
+  > div
+    flex-basis: 100%
+
+    +media($nav-collapse)
+      p.address
+        width: 50%
+        float: left
+
+    +media($nav-collapse)
+      flex-basis: calc(100% / 3 - 24px)
+
+    +media($huge)
+      flex-basis: calc(100% / 3 - 96px)
 
   .icon-github_badge
     flex-basis: 100%
     text-align: center
-    margin: 12px 0
+    margin: 24px 0 12px
     font-size: 2em
     color: darken($neutral, 50%)
     transition: all .3s ease-in-out
