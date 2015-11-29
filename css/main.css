@@ -588,7 +588,8 @@ nav.main-nav ul {
         margin-right: 36px; } }
     nav.main-nav ul li a {
       color: #f0f0f0;
-      padding: 16px 0; }
+      padding: 16px 0;
+      transition: color 0.2s ease-in-out; }
       nav.main-nav ul li a:hover {
         color: #a83a24; }
       nav.main-nav ul li a:focus {
