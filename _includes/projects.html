@@ -1,6 +1,6 @@
 <section id="projects" class="projects">
   {% for project in site.data.settings.projects %}
-  <figure onclick="clicky.log('#{{ project.folder }}','{{ project.title }}', 'pageview');">
+  <figure onclick="clicky.log('#{{ project.folder }}','{{ project.title }}');">
     <img src="../img/{{ project.image }}" alt="{{ project.title }}"/>
     <figcaption data-project="{{ project.folder }}" data-header="{{ project.header }}">
       <div class="projects-container">
