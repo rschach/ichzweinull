@@ -11,8 +11,8 @@
     </div>
   </div>
   {% endfor %}
-  <div class="client-prev"></div>
-  <div class="client-next"></div>
+  <div class="client-prev" onclick="clicky.log('#prev','Prev');"></div>
+  <div class="client-next" onclick="clicky.log('#next','Next');"></div>
   <div class="client-counter">
     {% for client in site.data.settings.clients %}
     <div class="{% if forloop.first %}active{% endif %}"></div>
