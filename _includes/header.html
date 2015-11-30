@@ -12,7 +12,7 @@
   <nav class="main-nav">
     <ul>
       {% for item in site.data.settings.menu %}
-      <li><a href="#{{ item.url }}" onclick="clicky.log('#{{ item.url}}','{{ item.title}}');">{{ item.title }}</a></li>
+      <li><a href="#{{ item.url }}" onclick="clicky.log('#{{ item.url}}','{{ item.title}}', 'pageview');">{{ item.title }}</a></li>
       {% endfor %}
     </ul>
   </nav>
