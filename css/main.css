@@ -755,6 +755,9 @@ nav.main-nav::after {
       .modal .modal-content {
         padding: 42px 0 84px;
         max-width: 620px; } }
+    @media screen and (min-width: 1000px) {
+      .modal .modal-content p {
+        text-align: left; } }
 
 .modal::-webkit-scrollbar {
   width: 4px; }
@@ -1150,6 +1153,9 @@ figure {
   .about article {
     margin: 0 auto 136px;
     padding-top: 12px; }
+    @media screen and (min-width: 600px) {
+      .about article p {
+        text-align: left; } }
 
 .contact {
   background: #22303a;
