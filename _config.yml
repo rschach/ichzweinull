@@ -1,8 +1,2 @@
-# Site settings
-title: ichzwei.null - Webdesign &amp; Entwicklung
-description: > # this means to ignore newlines until "baseurl:"
- Portfolio von Sascha Mersch, Webdesigner in Berlin
-
 # Build settings
-markdown: kramdown
 exclude: ["node_modules","gulpfile.js","package.json"]
