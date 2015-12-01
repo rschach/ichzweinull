@@ -750,7 +750,7 @@ nav.main-nav::after {
   .modal .modal-content {
     margin: 0 auto;
     padding: 24px 0 48px;
-    max-width: 90%; }
+    max-width: calc(100% - 40px); }
     @media screen and (min-width: 700px) {
       .modal .modal-content {
         padding: 42px 0 84px;
@@ -1054,7 +1054,7 @@ section {
 
 .content-container {
   margin: 0 auto;
-  max-width: 90%; }
+  max-width: calc(100% - 40px); }
   @media screen and (min-width: 700px) {
     .content-container {
       max-width: 620px; } }
