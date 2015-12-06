@@ -986,6 +986,31 @@ nav.main-nav::after {
     .client-next {
       right: 40px; } }
 
+.thanks {
+  background: #22303a;
+  position: relative;
+  margin: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh; }
+  .thanks .container {
+    margin: 20vh auto 0; }
+  .thanks h1:after {
+    display: none; }
+  .thanks .logo {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+    .thanks .logo h2 {
+      text-align: center; }
+  .thanks .button {
+    background: #a83a24;
+    border-color: #a83a24;
+    color: #f0f0f0; }
+    .thanks .button a {
+      color: #f0f0f0; }
+
 div.sections {
   padding: 0;
   margin: 0 auto;
