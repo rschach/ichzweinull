@@ -1009,7 +1009,8 @@ nav.main-nav::after {
     border-color: #a83a24;
     color: #f0f0f0; }
     .thanks .button a {
-      color: #f0f0f0; }
+      color: #f0f0f0;
+      padding: 1em 2em; }
 
 div.sections {
   padding: 0;
