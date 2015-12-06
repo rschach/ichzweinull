@@ -45,7 +45,7 @@
       font-size: $h3-font-size
       text-align: left
 
-    &:before, &:after
+    &:after
       content: '\e904'
       font-family: icomoon
       display: inline
@@ -54,20 +54,7 @@
       line-height: 1
       color: $primary
       font-size: 1.625em
-
-    &:before
-      transform: rotate(180deg)
-      margin: -0 0 0 -28px
-      display: none
-      +media($small)
-        display: initial
-      +media($nav-collapse)
-        margin: -1px 0 0 -36px
-
-    &:after
-      margin: 5px 0 0 5px
-      +media($nav-collapse)
-        margin: 5px 0 0 5px
+      margin: 4px 0 0 3px
 
 // Client Counter
 .client-counter

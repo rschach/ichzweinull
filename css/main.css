@@ -141,8 +141,8 @@ td, th {
 
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?da08a');
-  src: url('../fonts/icomoon.eot?da08a#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?da08a') format('truetype'), url('../fonts/icomoon.woff?da08a') format('woff'), url('../fonts/icomoon.svg?da08a#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?i5tev7');
+  src: url('../fonts/icomoon.eot?i5tev7#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?i5tev7') format('truetype'), url('../fonts/icomoon.woff?i5tev7') format('woff'), url('../fonts/icomoon.svg?i5tev7#icomoon') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -159,32 +159,8 @@ td, th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-github_badge:before {
-  content: "\e609"; }
-
-.icon-jquery:before {
-  content: "\e650"; }
-
-.icon-sass:before {
-  content: "\e64b"; }
-
-.icon-html5:before {
-  content: "\e636"; }
-
-.icon-joomla:before {
-  content: "\e641"; }
-
-.icon-less:before {
-  content: "\e658"; }
-
-.icon-gulp:before {
-  content: "\e663"; }
-
-.icon-code:before {
-  content: "\e696"; }
-
-.icon-responsive:before {
-  content: "\e697"; }
+.icon-right-quote-alt:before {
+  content: "\e901"; }
 
 .icon-chevron-thin-left:before {
   content: "\e902"; }
@@ -200,6 +176,9 @@ td, th {
 
 .icon-popup:before {
   content: "\e907"; }
+
+.icon-github_badge:before {
+  content: "\e609"; }
 
 /* Generated with Bounce.js. Edit at http://goo.gl/335BE4 */
 @-webkit-keyframes animation {
@@ -915,7 +894,7 @@ nav.main-nav::after {
     .client-text p {
       font-size: 1.25em;
       text-align: left; } }
-  .client-text p:before, .client-text p:after {
+  .client-text p:after {
     content: '\e904';
     font-family: icomoon;
     display: inline;
@@ -923,24 +902,8 @@ nav.main-nav::after {
     padding: 0;
     line-height: 1;
     color: #a83a24;
-    font-size: 1.625em; }
-  .client-text p:before {
-    -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
-    margin: -0 0 0 -28px;
-    display: none; }
-    @media screen and (min-width: 600px) {
-      .client-text p:before {
-        display: initial; } }
-    @media screen and (min-width: 1000px) {
-      .client-text p:before {
-        margin: -1px 0 0 -36px; } }
-  .client-text p:after {
-    margin: 5px 0 0 5px; }
-    @media screen and (min-width: 1000px) {
-      .client-text p:after {
-        margin: 5px 0 0 5px; } }
+    font-size: 1.625em;
+    margin: 4px 0 0 3px; }
 
 .client-counter {
   max-width: 100%;
