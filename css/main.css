@@ -1002,8 +1002,8 @@ nav.main-nav::after {
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       width: auto; } }
-  .client-prev:hover, .client-next:hover {
-    color: #a83a24; }
+  .client-prev:hover, .client-prev:focus, .client-prev:active, .client-next:hover, .client-next:focus, .client-next:active {
+    color: #73c1c8; }
 
 .client-prev {
   left: 0; }
