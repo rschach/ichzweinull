@@ -1039,7 +1039,7 @@ section {
       max-width: 325px; } }
   @media screen and (min-width: 600px) {
     .container {
-      max-width: 460px; } }
+      max-width: 465px; } }
 
 .content-container {
   margin: 0 auto;
@@ -1214,16 +1214,16 @@ figure {
     opacity: 1; }
   .contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {
     color: #8a8a8a;
-    font-size: 70%;
+    font-size: 65%;
     font-weight: 700;
-    line-height: 2.25;
+    line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase; }
   .contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder {
     color: #8a8a8a;
     font-size: 70%;
     font-weight: 700;
-    line-height: 2.25;
+    line-height: 1.5;
     letter-spacing: 2px;
     text-transform: uppercase;
     opacity: 1; }
