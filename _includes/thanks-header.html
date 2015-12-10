@@ -1,0 +1,19 @@
+<header class="main-header">
+  <div class="logo">
+    <h2><span>ich</span>zwei<span>.</span>null</h2>
+  </div>
+  <div class="tagline">
+    <p>Webdesign &amp; Entwicklung</p>
+  </div>
+  <div class="menu-toggle">
+    <span class="menu-bar">
+    </span>
+  </div>
+  <nav class="main-nav">
+    <ul>
+      {% for item in site.data.settings.menu %}
+      <li><a href="#{{ item.url }}" onclick="clicky.log('#{{ item.url}}','{{ item.title}}');">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
