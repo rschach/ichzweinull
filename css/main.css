@@ -986,34 +986,12 @@ nav.main-nav::after {
     .client-next {
       right: 40px; } }
 
-.thanks {
-  background: #22303a;
-  position: relative;
-  margin: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh; }
+@media screen and (min-width: 600px) {
   .thanks .container {
-    margin: 20vh auto 0; }
-    @media screen and (min-width: 600px) {
-      .thanks .container {
-        max-width: 460px; } }
-  .thanks h1:after {
-    display: none; }
-  .thanks .logo {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%; }
-    .thanks .logo h2 {
-      text-align: center; }
-  .thanks .button {
-    background: #a83a24;
-    border-color: #a83a24;
-    color: #f0f0f0; }
-    .thanks .button a {
-      color: #f0f0f0;
-      padding: 1em 2em; }
+    max-width: 460px; } }
+.thanks .container a {
+  color: #f0f0f0;
+  padding: 1em 2em; }
 
 div.sections {
   padding: 0;
@@ -1051,7 +1029,7 @@ section {
     .content-container {
       max-width: 620px; } }
 
-.home {
+.home, .thanks {
   background: #22303a;
   position: relative;
   margin: 0;
@@ -1060,23 +1038,23 @@ section {
   display: flex;
   min-height: 72.5vh; }
   @media screen and (min-width: 600px) {
-    .home {
+    .home, .thanks {
       min-height: 70vh; } }
   @media screen and (min-width: 1000px) {
-    .home {
+    .home, .thanks {
       min-height: 90vh; } }
   @media screen and (min-width: 1400px) {
-    .home {
+    .home, .thanks {
       min-height: 82.5vh; } }
-  .home .container {
+  .home .container, .thanks .container {
     margin: 20vh auto 0; }
     @media screen and (min-width: 600px) {
-      .home .container {
+      .home .container, .thanks .container {
         margin: 21vh auto 0; } }
     @media screen and (min-width: 1000px) {
-      .home .container {
+      .home .container, .thanks .container {
         margin: 28vh auto 0; } }
-    .home .container p {
+    .home .container p, .thanks .container p {
       text-align: center; }
 
 .projects {
