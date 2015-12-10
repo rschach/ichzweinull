@@ -996,6 +996,9 @@ nav.main-nav::after {
   min-height: 100vh; }
   .thanks .container {
     margin: 20vh auto 0; }
+    @media screen and (min-width: 600px) {
+      .thanks .container {
+        max-width: 460px; } }
   .thanks h1:after {
     display: none; }
   .thanks .logo {
