@@ -1072,7 +1072,7 @@ figure {
     display: block; }
   figure figcaption {
     color: #f0f0f0;
-    background: rgba(168, 58, 36, 0.95);
+    background: rgba(168, 58, 36, 0.925);
     padding: 24px 0;
     display: -webkit-flex;
     display: -ms-flexbox;
