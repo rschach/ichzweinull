@@ -10,9 +10,9 @@ projects:
 - {title: Kleine Nachtrevue, image: kleine-nachtrevue.jpg, folder: 'project-3', header: 'project-3', text: 'Ein erfolgreiches frisches Branding und responsives Webdesign für das Berliner Burlesque-Theater.'}
 
 clients:
-- {name: Uwe Schmidt, company: Werkraum, image: uwe-schmidt.png, text: 'Sascha Mersch hat mich von der ersten Idee bis zum Launch komplett begleitet und zu einer wunderbaren Website verholfen, die bei meinen Kunden ohne Ausnahme großen Eindruck hinterlassen hat.'}
 - {name: Esther Kimmel, company: Kimmelcoaching, image: esther-kimmel.png, text: 'Was ich selbst gar nicht so klar ausdrücken konnte, haben Sie offenbar intuitiv erfasst und umgesetzt: mit einem sehr guten Gespür dafür, was zu mir als Person und gleichzeitig zu meiner Branche passt.'}
 - {name: Tamara Kunze, company: Personal Excellence, image: tamara-kunze.png, text: 'Schon von dem ersten Entwurf war ich gleich begeistert. Auch war ich beeindruckt von der Schnelligkeit der Bearbeitung – sowohl bei der Erstellung der Homepage als auch bei der weiteren Zusammenarbeit.'}
+- {name: Uwe Schmidt, company: Werkraum, image: uwe-schmidt.png, text: 'Sascha Mersch hat mich von der ersten Idee bis zum Launch komplett begleitet und zu einer wunderbaren Website verholfen, die bei meinen Kunden ohne Ausnahme großen Eindruck hinterlassen hat.'}
 
 company: ichzwei.null
 name: Sascha Mersch
