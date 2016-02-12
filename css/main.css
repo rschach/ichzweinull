@@ -344,7 +344,7 @@ html, body {
   font-family: 'Neue Haas Unica W01', 'Nimbus Sans L', Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5;
-  -webkit-tap-highlight-color: rgba(34, 47, 58, 0.25); }
+  -webkit-tap-highlight-color: rgba(32, 45, 55, 0.25); }
   html.noscroll, body.noscroll {
     overflow: hidden; }
 
@@ -430,7 +430,7 @@ a:hover {
   line-height: 1.825; }
 
 .main-header {
-  background: #22303a;
+  background: #202d37;
   width: 100%;
   margin: 0;
   padding: 0 20px;
@@ -468,7 +468,7 @@ a:hover {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #22303a;
+    background: #202d37;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     margin: 0;
     padding: 0 20px;
@@ -651,7 +651,7 @@ nav.main-nav::after {
     opacity: 1; }
 
 .modal {
-  background: #22303a;
+  background: #202d37;
   box-shadow: none;
   position: fixed;
   top: 40px;
@@ -745,7 +745,7 @@ nav.main-nav::after {
       width: 8px; } }
 
 .modal::-webkit-scrollbar-track {
-  background: #283844; }
+  background: #263541; }
 
 .modal::-webkit-scrollbar-thumb {
   background: rgba(168, 58, 36, 0.875); }
@@ -814,7 +814,7 @@ nav.main-nav::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #22303a;
+  background: #202d37;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1030,7 +1030,7 @@ section {
       max-width: 620px; } }
 
 .home, .thanks {
-  background: #22303a;
+  background: #202d37;
   position: relative;
   margin: 0;
   display: -webkit-flex;
@@ -1099,17 +1099,17 @@ figure {
         height: 100%;
         transition: all 0.2s ease-in-out; } }
   figure:nth-of-type(2n) figcaption {
-    background: #22303a; }
+    background: #202d37; }
     @media screen and (min-width: 1000px) {
       figure:nth-of-type(2n) figcaption {
         border-right: 0;
         left: auto;
         right: 0; } }
   figure:nth-of-type(2n) .button {
-    color: #22303a; }
+    color: #202d37; }
 
 .about {
-  background: #22303a;
+  background: #202d37;
   padding: 0; }
   .about header {
     text-align: center;
@@ -1128,7 +1128,7 @@ figure {
         text-align: left; } }
 
 .contact {
-  background: #22303a;
+  background: #202d37;
   padding: 48px 0 180px; }
   .contact header h1 {
     margin-bottom: 1.025em; }
@@ -1155,8 +1155,8 @@ figure {
     border: 0;
     font-size: 90%; }
   .contact-form input, .contact-form textarea {
-    background: #1e2932;
-    border: 1px solid #273642;
+    background: #1c272f;
+    border: 1px solid #25343f;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2) inset;
     padding: 8px 12px;
     margin-bottom: 8px; }
@@ -1210,7 +1210,7 @@ figure {
     opacity: 1; }
 
 footer {
-  background: #1e2932;
+  background: #1c272f;
   min-height: 240px;
   padding: 60px 20px;
   text-align: center;
