@@ -389,7 +389,7 @@ h1, h2, h3, h4 {
 
 h1:after, h2:after {
   content: '';
-  width: 140px;
+  width: 150px;
   height: 4px;
   display: block;
   margin: 24px auto 0;
@@ -833,7 +833,7 @@ nav.main-nav::after {
   padding: 1.1em 0;
   text-align: center;
   margin: 36px auto 12px;
-  max-width: 170px;
+  max-width: 150px;
   display: block;
   position: relative;
   letter-spacing: 2px;
@@ -1098,7 +1098,7 @@ figure {
         height: 100%;
         transition: all 0.2s ease-in-out; } }
   figure:nth-of-type(2n) figcaption {
-    background: rgba(40, 97, 103, 0.925); }
+    background: rgba(32, 45, 55, 0.925); }
     @media screen and (min-width: 1000px) {
       figure:nth-of-type(2n) figcaption {
         border-right: 0;
