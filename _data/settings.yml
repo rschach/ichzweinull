@@ -5,7 +5,7 @@ menu:
 - {title: Kontakt, url: 'contact'}
 
 projects:
-- {title: Personal Excellence, image: personal-excellence.jpg, folder: 'project-1', header: 'project-1', text: 'Umfangreiches responsives Webdesign für eine Berliner Personalberatung mit integrierter Stellenbörse.'}
+- {title: Personal Excellence, image: personal-excellence.jpg, folder: 'project-1', header: 'project-1', text: 'Umfangreiches responsives Webdesign für die Berliner Personalberatung mit integrierter Stellenbörse.'}
 - {title: Gesa Henrici, image: gesa-henrici-temp.jpg, folder: 'project-2', header: 'project-2', text: 'Eine auf das Wesentliche reduzierte Website für die Berliner Rechtsanwältin Gesa Heinrici.'}
 - {title: Kleine Nachtrevue, image: kleine-nachtrevue.jpg, folder: 'project-3', header: 'project-3', text: 'Ein erfolgreiches frisches Branding und responsives Webdesign für das Berliner Burlesque-Theater.'}
 
