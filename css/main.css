@@ -826,20 +826,19 @@ nav.main-nav::after {
           justify-content: center; }
 
 .button {
-  color: #a83a24;
-  background: #f0f0f0;
+  color: #f0f0f0;
+  background: none;
   border: 1px solid #f0f0f0;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-width: 0 0 1px;
   padding: 1.1em 0;
   text-align: center;
   margin: 36px auto 12px;
-  max-width: 200px;
+  max-width: 170px;
   display: block;
   position: relative;
   letter-spacing: 2px;
   transition: all 0.2s ease-in-out; }
   .button:hover {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     top: -1px; }
 
 .icons-container {
@@ -1105,8 +1104,6 @@ figure {
         border-right: 0;
         left: auto;
         right: 0; } }
-  figure:nth-of-type(2n) .button {
-    color: #22303a; }
 
 .about {
   background: #22303a;
