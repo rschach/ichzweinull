@@ -1065,6 +1065,11 @@ figure {
   position: relative;
   cursor: pointer;
   overflow: hidden; }
+  figure:last-of-type {
+    margin: 0; }
+  @media screen and (min-width: 700px) {
+    figure:first-of-type {
+      border-top: 20px solid #172027; } }
   figure img {
     display: block; }
   figure figcaption {

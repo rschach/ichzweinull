@@ -8,6 +8,13 @@ figure
   cursor: pointer
   overflow: hidden
 
+  &:last-of-type
+    margin: 0
+
+  &:first-of-type
+    +media($small-med)
+      border-top: 20px solid $bg-color
+
   img
     display: block
 
