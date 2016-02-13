@@ -828,18 +828,23 @@ nav.main-nav::after {
 .button {
   color: #f0f0f0;
   background: none;
-  border: 1px dotted #f0f0f0;
+  border: 1px solid #f0f0f0;
   border-width: 1px 0;
   padding: 1.1em 0;
   text-align: center;
   margin: 36px auto 12px;
-  max-width: 150px;
+  max-width: 160px;
   display: block;
   position: relative;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   transition: all 0.2s ease-in-out; }
   .button:hover {
     top: -1px; }
+  .button:before {
+    content: '\e907';
+    font-family: icomoon;
+    display: inline-block;
+    margin: 0; }
 
 .icons-container {
   margin: 0 auto;
