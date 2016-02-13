@@ -828,8 +828,8 @@ nav.main-nav::after {
 .button {
   color: #f0f0f0;
   background: none;
-  border: 1px solid #f0f0f0;
-  border-width: 0 0 1px;
+  border: 1px dotted #f0f0f0;
+  border-width: 1px 0;
   padding: 1.1em 0;
   text-align: center;
   margin: 36px auto 12px;
@@ -1065,8 +1065,6 @@ figure {
   position: relative;
   cursor: pointer;
   overflow: hidden; }
-  figure:last-of-type {
-    margin: 0; }
   figure img {
     display: block; }
   figure figcaption {
