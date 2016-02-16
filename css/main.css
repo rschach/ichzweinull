@@ -3330,7 +3330,6 @@ figure {
 
 .contact {
   background: #202d37;
-  border-top: 20px solid #172027;
   padding: 48px 0 180px; }
   .contact header h1 {
     margin-bottom: 1.025em; }
@@ -3413,6 +3412,7 @@ figure {
 
 footer {
   background: #1c272f;
+  border-bottom: 20px solid #172027;
   min-height: 240px;
   padding: 60px 20px;
   text-align: center;
