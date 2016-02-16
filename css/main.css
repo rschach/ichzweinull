@@ -1035,6 +1035,9 @@ section {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 72.5vh; }
   @media screen and (min-width: 600px) {
     .home, .thanks {
@@ -1046,16 +1049,9 @@ section {
     .home, .thanks {
       min-height: 82.5vh; } }
   .home .container, .thanks .container {
-    margin: 20vh auto 0; }
-    @media screen and (min-width: 600px) {
-      .home .container, .thanks .container {
-        margin: 21vh auto 0; } }
-    @media screen and (min-width: 1000px) {
-      .home .container, .thanks .container {
-        margin: 24vh auto 0; } }
-    @media screen and (min-width: 1400px) {
-      .home .container, .thanks .container {
-        margin: 27.5vh auto 0; } }
+    margin: 0 auto; }
+    .home .container h1, .thanks .container h1 {
+      margin: 0; }
     .home .container p, .thanks .container p {
       text-align: center; }
 
