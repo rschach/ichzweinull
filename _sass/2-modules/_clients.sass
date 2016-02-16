@@ -1,10 +1,20 @@
 .clients-wrap
-  background: $secondary
+  background: url(../img/bg-clients.jpg) center
   padding: 84px 0 120px
   position: relative
 
+  &::after
+    content: ''
+    background: transparentize($secondary, 0.1)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
   .client
     position: relative
+    z-index: 1
     display: none
     animation: animation 750ms linear both
 
@@ -62,6 +72,7 @@
   text-align: center
   margin: 0
   position: absolute
+  z-index: 1
   left: 50%
   bottom: 14.25%
   transform: translateX(-50%)
@@ -97,6 +108,7 @@
   cursor: pointer
   font-size: 3.25em
   position: absolute
+  z-index: 1
   bottom: 12.25%
   width: 50%
   transition: all .2s ease-in-out
