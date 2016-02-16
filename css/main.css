@@ -2586,7 +2586,7 @@ h1:after, h2:after {
 
 h2:after {
   margin: 12px auto;
-  background: rgba(255, 255, 255, 0.5); }
+  background: rgba(255, 255, 255, 0.15); }
 
 h4 {
   font-size: 1em; }
@@ -3053,7 +3053,7 @@ nav.main-nav::after {
   position: relative; }
   .clients-wrap::after {
     content: '';
-    background: rgba(40, 97, 103, 0.9);
+    background: rgba(40, 97, 103, 0.85);
     position: absolute;
     top: 0;
     left: 0;
@@ -3100,7 +3100,7 @@ nav.main-nav::after {
     position: absolute;
     padding: 0;
     line-height: 1;
-    color: rgba(168, 58, 36, 0.75);
+    color: rgba(168, 58, 36, 0.85);
     margin: -9px 0 0 3px;
     font-weight: normal;
     font-size: 4.5em; }
@@ -3330,6 +3330,7 @@ figure {
 
 .contact {
   background: #202d37;
+  border-top: 20px solid #172027;
   padding: 48px 0 180px; }
   .contact header h1 {
     margin-bottom: 1.025em; }
