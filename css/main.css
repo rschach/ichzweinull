@@ -485,9 +485,6 @@ a:hover {
     @media screen and (min-width: 700px) {
       .main-header.fixed {
         max-width: calc(100% - 40px); } }
-    @media screen and (min-width: 1200px) {
-      .main-header.fixed {
-        max-width: 92%; } }
     @media screen and (min-width: 1600px) {
       .main-header.fixed {
         max-width: 1460px; } }
@@ -1005,10 +1002,8 @@ div.sections {
   max-width: 100%; }
   @media screen and (min-width: 700px) {
     div.sections {
-      max-width: calc(100% - 40px); } }
-  @media screen and (min-width: 1200px) {
-    div.sections {
-      max-width: 92%; } }
+      max-width: calc(100% - 40px);
+      margin-top: 20px; } }
   @media screen and (min-width: 1600px) {
     div.sections {
       max-width: 1460px; } }
@@ -1046,7 +1041,7 @@ section {
       min-height: 70vh; } }
   @media screen and (min-width: 1000px) {
     .home, .thanks {
-      min-height: 90vh; } }
+      min-height: 80vh; } }
   @media screen and (min-width: 1400px) {
     .home, .thanks {
       min-height: 82.5vh; } }
@@ -1057,7 +1052,10 @@ section {
         margin: 21vh auto 0; } }
     @media screen and (min-width: 1000px) {
       .home .container, .thanks .container {
-        margin: 28vh auto 0; } }
+        margin: 24vh auto 0; } }
+    @media screen and (min-width: 1400px) {
+      .home .container, .thanks .container {
+        margin: 27.5vh auto 0; } }
     .home .container p, .thanks .container p {
       text-align: center; }
 
