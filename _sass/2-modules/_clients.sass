@@ -46,15 +46,15 @@
       text-align: left
 
     &:after
-      content: '\e904'
-      font-family: icomoon
+      content: '\201D'
       display: inline
       position: absolute
       padding: 0
       line-height: 1
-      color: $primary
-      font-size: 1.625em
-      margin: 4px 0 0 3px
+      color: transparentize($primary, 0.25)
+      margin: -9px 0 0 3px
+      font-weight: normal
+      font-size: 4.5em
 
 // Client Counter
 .client-counter
@@ -95,7 +95,7 @@
   height: 40px
   color: lighten($secondary, 22.5%)
   cursor: pointer
-  font-size: 2.25em
+  font-size: 3.25em
   position: absolute
   bottom: 12.25%
   width: 50%
@@ -115,8 +115,8 @@
 
 .client-prev
   &:before
-    content: "\e902"
-    font-family: icomoon
+    content: "\f3d2"
+    font-family: Ionicons
 
   left: 0
   +media($nav-collapse)
@@ -124,8 +124,8 @@
 
 .client-next
   &:before
-    content: "\e903"
-    font-family: icomoon
+    content: "\f3d3"
+    font-family: Ionicons
 
   right: 0
   +media($nav-collapse)

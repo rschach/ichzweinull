@@ -3068,10 +3068,11 @@ nav.main-nav::after {
   .button:hover {
     top: -1px; }
   .button:before {
-    content: '\e907';
-    font-family: icomoon;
+    content: '\f3f0';
+    font-family: Ionicons;
+    font-weight: normal;
     display: inline-block;
-    margin: 0; }
+    margin: 0 2px 0; }
 
 .icons-container {
   margin: 0 auto;
@@ -3126,15 +3127,15 @@ nav.main-nav::after {
       font-size: 1.25em;
       text-align: left; } }
   .client-text p:after {
-    content: '\e904';
-    font-family: icomoon;
+    content: '\201D';
     display: inline;
     position: absolute;
     padding: 0;
     line-height: 1;
-    color: #a83a24;
-    font-size: 1.625em;
-    margin: 4px 0 0 3px; }
+    color: rgba(168, 58, 36, 0.75);
+    margin: -9px 0 0 3px;
+    font-weight: normal;
+    font-size: 4.5em; }
 
 .client-counter {
   max-width: 100%;
@@ -3174,7 +3175,7 @@ nav.main-nav::after {
   height: 40px;
   color: #49afb8;
   cursor: pointer;
-  font-size: 2.25em;
+  font-size: 3.25em;
   position: absolute;
   bottom: 12.25%;
   width: 50%;
@@ -3202,8 +3203,8 @@ nav.main-nav::after {
 .client-prev {
   left: 0; }
   .client-prev:before {
-    content: "\e902";
-    font-family: icomoon; }
+    content: "\f3d2";
+    font-family: Ionicons; }
   @media screen and (min-width: 1000px) {
     .client-prev {
       left: 40px; } }
@@ -3211,8 +3212,8 @@ nav.main-nav::after {
 .client-next {
   right: 0; }
   .client-next:before {
-    content: "\e903";
-    font-family: icomoon; }
+    content: "\f3d3";
+    font-family: Ionicons; }
   @media screen and (min-width: 1000px) {
     .client-next {
       right: 40px; } }
@@ -3485,11 +3486,11 @@ footer {
               flex-basis: 100%;
       text-align: center;
       margin: 24px 0 12px; }
-  footer .icon-github_badge {
-    font-size: 2em;
+  footer .ion-social-github {
+    font-size: 1.65em;
     color: #707070;
     transition: all 0.3s ease-in-out; }
-    footer .icon-github_badge:hover {
+    footer .ion-social-github:hover {
       color: #b0b0b0; }
   footer h4 {
     color: #707070;
