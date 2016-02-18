@@ -2596,7 +2596,7 @@ p {
   line-height: 1.625em;
   margin: 1.5em 0;
   text-align: center; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 800px) {
     p {
       font-size: 1em;
       line-height: 1.5; } }
@@ -3319,19 +3319,25 @@ figure {
       padding: 48px 0 0; }
   .about .article-container {
     overflow: hidden;
-    margin: 48px auto 216px;
+    margin: 48px auto 60px;
     max-width: calc(100% - 40px); }
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 800px) {
+      .about .article-container {
+        margin: 48px auto 120px;
+        max-width: 66.66%; } }
+    @media screen and (min-width: 1200px) {
       .about .article-container {
         max-width: 50%; } }
-    @media screen and (min-width: 600px) {
-      .about .article-container p {
-        text-align: left; } }
-    .about .article-container p:first-of-type {
-      margin-top: 0; }
+    @media screen and (min-width: 1600px) {
+      .about .article-container {
+        margin: 48px auto 170px; } }
+    .about .article-container p {
+      text-align: left; }
+      .about .article-container p:first-of-type {
+        margin-top: 0; }
     .about .article-container img {
-      max-width: calc(33.33% - 20px);
-      margin: 7px 20px 0 0;
+      max-width: 33.33%;
+      margin: 7px 20px 40px 0;
       float: left; }
 
 .contact {

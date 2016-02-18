@@ -12,20 +12,26 @@
 
   .article-container
     overflow: hidden
-    margin: 48px auto 216px
+    margin: 48px auto 60px
     max-width: $article-initial-width
 
-    +media($nav-collapse)
+    +media($medium)
+      margin: 48px auto 120px
+      max-width: $article-medium-width
+
+    +media($big)
       max-width: $article-max-width
 
+    +media($huge)
+      margin: 48px auto 170px
+
     p
-      +media($small)
-        text-align: left
+      text-align: left
 
       &:first-of-type
         margin-top: 0
 
     img
-      max-width: calc(33.33% - 20px)
-      margin: 7px 20px 0 0
+      max-width: 33.33%
+      margin: 7px 20px 40px 0
       float: left
