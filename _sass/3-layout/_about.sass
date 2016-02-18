@@ -8,17 +8,15 @@
     margin: 0 auto
 
     .container
-      padding: 84px 0 0
+      padding: 48px 0 0
 
-    img
-      max-width: 100px
+  .article-container
+    overflow: hidden
+    margin: 48px auto 216px
+    max-width: $article-initial-width
 
-    h1
-      margin: 0.85em 0 0
-
-  article
-    margin: 0 auto 136px
-    padding-top: 12px
+    +media($nav-collapse)
+      max-width: $article-max-width
 
     p
       +media($small)
@@ -28,6 +26,6 @@
         margin-top: 0
 
     img
-      max-width: 225px
-      margin-right: 20px
+      max-width: calc(33.33% - 20px)
+      margin: 7px 20px 0 0
       float: left
