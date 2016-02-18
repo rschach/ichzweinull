@@ -2919,7 +2919,7 @@ nav.main-nav::after {
     @media screen and (min-width: 700px) {
       .modal .modal-content {
         padding: 42px 0 84px;
-        max-width: 620px; } }
+        max-width: 940px; } }
     @media screen and (min-width: 1000px) {
       .modal .modal-content p {
         text-align: left; } }
@@ -3227,7 +3227,7 @@ section {
   max-width: calc(100% - 40px); }
   @media screen and (min-width: 700px) {
     .content-container {
-      max-width: 620px; } }
+      max-width: 940px; } }
 
 .home, .thanks {
   background: #202d37;
@@ -3327,6 +3327,12 @@ figure {
     @media screen and (min-width: 600px) {
       .about article p {
         text-align: left; } }
+    .about article p:first-of-type {
+      margin-top: 0; }
+    .about article img {
+      max-width: 225px;
+      margin-right: 20px;
+      float: left; }
 
 .contact {
   background: #202d37;
