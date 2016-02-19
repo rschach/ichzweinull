@@ -3336,9 +3336,17 @@ figure {
       .about .article-container p:first-of-type {
         margin-top: 0; }
     .about .article-container img {
-      max-width: 33.33%;
-      margin: 7px 20px 40px 0;
-      float: left; }
+      max-width: 170px;
+      margin: 0 auto;
+      display: block; }
+      @media screen and (min-width: 460px) {
+        .about .article-container img {
+          float: left;
+          max-width: calc(100% / 3);
+          margin: 7px 20px 20px 0; } }
+      @media screen and (min-width: 750px) {
+        .about .article-container img {
+          max-width: calc((100% / 3) - 20px); } }
 
 .contact {
   background: #202d37;
