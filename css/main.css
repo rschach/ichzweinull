@@ -3014,7 +3014,7 @@ nav.main-nav::after {
 .button {
   color: #e5e5e5;
   background: none;
-  border: 1px solid #e5e5e5;
+  border: 1px solid rgba(229, 229, 229, 0.75);
   border-width: 1px 0;
   padding: 1.1em 0;
   text-align: center;
