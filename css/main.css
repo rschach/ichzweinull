@@ -3319,18 +3319,18 @@ figure {
       padding: 48px 0 0; }
   .about .article-container {
     overflow: hidden;
-    margin: 48px auto 60px;
+    margin: 48px auto 80px;
     max-width: calc(100% - 40px); }
     @media screen and (min-width: 800px) {
       .about .article-container {
-        margin: 48px auto 120px;
+        margin: 48px auto 140px;
         max-width: 66.66%; } }
     @media screen and (min-width: 1200px) {
       .about .article-container {
         max-width: 50%; } }
     @media screen and (min-width: 1600px) {
       .about .article-container {
-        margin: 48px auto 170px; } }
+        margin: 48px auto 190px; } }
     .about .article-container p {
       text-align: left; }
       .about .article-container p:first-of-type {
