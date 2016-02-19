@@ -3347,6 +3347,9 @@ figure {
       @media screen and (min-width: 750px) {
         .about .article-container img {
           max-width: calc((100% / 3) - 20px); } }
+      @media screen and (min-width: 1600px) {
+        .about .article-container img {
+          max-width: calc(100% / 3); } }
 
 .contact {
   background: #202d37;
