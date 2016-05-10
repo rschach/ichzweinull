@@ -2613,6 +2613,7 @@ a:hover {
   margin: 0;
   padding: 0 20px;
   position: absolute;
+  top: 0;
   transition: padding 0.2s ease-in-out, max-height 0.2s ease-in-out, opacity 0.3s ease-in-out;
   max-height: 50px;
   overflow: hidden;
@@ -2979,7 +2980,6 @@ nav.main-nav::after {
   max-width: 155px;
   display: block;
   position: relative;
-  letter-spacing: 1px;
   transition: all .2s ease-in-out; }
   .button:hover {
     top: -1px; }
@@ -3354,7 +3354,6 @@ figure {
     line-height: 1;
     font-size: 75%;
     font-weight: 700;
-    letter-spacing: 2px;
     text-transform: uppercase;
     box-shadow: none;
     transition: all .2s ease-in-out; }
