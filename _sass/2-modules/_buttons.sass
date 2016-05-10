@@ -1,18 +1,24 @@
 .button
-  color: $primary
-  background: $neutral
-  border: 1px solid $neutral
-  box-shadow: 0 1px 4px rgba(0,0,0, 0.2)
+  color: $neutral
+  background: none
+  border: 1px solid transparentize($neutral, 0.25)
+  border-width: 1px 0
   padding: 1.10em 0
   text-align: center
   margin: 36px auto 12px
-  max-width: 200px
+  max-width: 155px
   display: block
   position: relative
   @extend .small-bold
-  letter-spacing: 2px
+  letter-spacing: 1px
   transition: all .2s ease-in-out
 
   &:hover
-    box-shadow: 0 1px 4px rgba(0,0,0, 0.4)
     top: -1px
+
+  &:before
+    content: '\f3f0'
+    font-family: Ionicons
+    font-weight: normal
+    display: inline-block
+    margin: 0 2px 0

@@ -1,10 +1,20 @@
 .clients-wrap
-  background: $secondary
+  background: url(../img/bg-clients.jpg) center
   padding: 84px 0 120px
   position: relative
 
+  &::after
+    content: ''
+    background: transparentize($secondary, 0.15)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
   .client
     position: relative
+    z-index: 1
     display: none
     animation: animation 750ms linear both
 
@@ -46,15 +56,58 @@
       text-align: left
 
     &:after
-      content: '\e904'
-      font-family: icomoon
+      content: '\201D'
       display: inline
       position: absolute
       padding: 0
       line-height: 1
-      color: $primary
-      font-size: 1.625em
-      margin: 4px 0 0 3px
+      color: transparentize($primary, 0.15)
+      margin: -9px 0 0 3px
+      font-weight: normal
+      font-size: 4.5em
+
+// Client Navigation
+.client-prev, .client-next
+  width: 40px
+  height: 40px
+  color: lighten($secondary, 22.5%)
+  cursor: pointer
+  font-size: 3.25em
+  position: absolute
+  z-index: 1
+  bottom: 12.25%
+  width: 50%
+  transition: all .2s ease-in-out
+  display: flex
+  align-items: center
+  justify-content: center
+  -webkit-tap-highlight-color: transparent
+
+  +media($nav-collapse)
+    top: 50%
+    transform: translateY(-50%)
+    width: auto
+
+  &:hover, &:focus, &:active
+    color: lighten($secondary, 33.75%)
+
+.client-prev
+  &:before
+    content: "\f3d2"
+    font-family: Ionicons
+
+  left: 0
+  +media($nav-collapse)
+    left: 40px
+
+.client-next
+  &:before
+    content: "\f3d3"
+    font-family: Ionicons
+
+  right: 0
+  +media($nav-collapse)
+    right: 40px
 
 // Client Counter
 .client-counter
@@ -62,6 +115,7 @@
   text-align: center
   margin: 0
   position: absolute
+  z-index: 1
   left: 50%
   bottom: 14.25%
   transform: translateX(-50%)
@@ -88,45 +142,3 @@
 
     &:hover, &.active
       background: lighten($secondary, 22.5%)
-
-// Client Navigation
-.client-prev, .client-next
-  width: 40px
-  height: 40px
-  color: lighten($secondary, 22.5%)
-  cursor: pointer
-  font-size: 2.25em
-  position: absolute
-  bottom: 12.25%
-  width: 50%
-  transition: all .2s ease-in-out
-  display: flex
-  align-items: center
-  justify-content: center
-  -webkit-tap-highlight-color: transparent
-
-  +media($nav-collapse)
-    top: 50%
-    transform: translateY(-50%)
-    width: auto
-
-  &:hover, &:focus, &:active
-    color: lighten($secondary, 33.75%)
-
-.client-prev
-  &:before
-    content: "\e902"
-    font-family: icomoon
-
-  left: 0
-  +media($nav-collapse)
-    left: 40px
-
-.client-next
-  &:before
-    content: "\e903"
-    font-family: icomoon
-
-  right: 0
-  +media($nav-collapse)
-    right: 40px

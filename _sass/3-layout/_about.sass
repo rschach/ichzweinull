@@ -1,5 +1,6 @@
 .about
   background: $bg-lighter
+  border-top: $sections-border
   padding: 0
 
   header
@@ -7,18 +8,38 @@
     margin: 0 auto
 
     .container
-      padding: 84px 0 0
+      padding: 48px 0 0
 
-    img
-      max-width: 100px
+  .article-container
+    overflow: hidden
+    margin: 48px auto 80px
+    max-width: $article-initial-width
 
-    h1
-      margin: 0.85em 0 0
+    +media($medium)
+      margin: 48px auto 140px
+      max-width: $article-medium-width
 
-  article
-    margin: 0 auto 136px
-    padding-top: 12px
+    +media($big)
+      max-width: $article-max-width
+
+    +media($huge)
+      margin: 48px auto 190px
 
     p
-      +media($small)
-        text-align: left
+      text-align: left
+
+      &:first-of-type
+        margin-top: 0
+
+    img
+      max-width: 170px
+      margin: 0 auto
+      display: block
+      +media($xsmall-med)
+        float: left
+        max-width: calc(100% / 3)
+        margin: 7px 20px 20px 0
+      +media($medium-small)
+        max-width: calc((100% / 3) - 20px)
+      +media($huge)
+          max-width: calc(100% / 3)

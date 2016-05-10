@@ -11,12 +11,16 @@ figure
   &:last-of-type
     margin: 0
 
+  &:first-of-type
+    +media($small-med)
+      border-top: $sections-border
+
   img
     display: block
 
   figcaption
     color: $text-color
-    background: transparentize($primary, 0.075)
+    background: transparentize($primary, 0.15)
     padding: 24px 0
     display: flex
     align-items: center
@@ -44,11 +48,8 @@ figure
 
   &:nth-of-type(2n)
     figcaption
-      background: $bg-lighter
+      background: transparentize($bg-lighter, 0.15)
       +media ($nav-collapse)
         border-right: 0
         left: auto
         right: 0
-
-    .button
-      color: $bg-lighter
