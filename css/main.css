@@ -3005,6 +3005,7 @@ nav.main-nav::after {
 
 .clients-wrap {
   background: url(../img/bg-clients.jpg) center;
+  border-top: 20px solid #172027;
   padding: 84px 0 120px;
   position: relative; }
   .clients-wrap::after {
@@ -3311,6 +3312,7 @@ figure {
 
 .contact {
   background: #202d37;
+  border-top: 20px solid #172027;
   padding: 48px 0 180px; }
   .contact header h1 {
     margin-bottom: 1.025em; }
